@@ -4079,1929 +4079,1929 @@ such as kvm_stat.
 %setup -q -n qemu-%{version}
 cp %{SOURCE18} pc-bios # keep "make check" happy
 tar -xf %{SOURCE21}
-%patch1 -p1
-#%%patch2 -p1
-#%%patch3 -p1
-#%%patch4 -p1
-#%%patch5 -p1
-#%%patch6 -p1
-#%%patch7 -p1
-#%%patch8 -p1
-#%%patch9 -p1
-#%%patch10 -p1
-#%%patch11 -p1
-#%%patch12 -p1
-#%%patch13 -p1
-#%%patch14 -p1
-#%%patch15 -p1
-#%%patch16 -p1
-#%%patch17 -p1
-#%%patch18 -p1
-#%%patch19 -p1
-#%%patch20 -p1
-#%%patch21 -p1
-#%%patch22 -p1
-#%%patch23 -p1
-#%%patch24 -p1
-#%%patch25 -p1
-#%%patch26 -p1
-#%%patch27 -p1
-#%%patch28 -p1
-%patch29 -p1
-%patch30 -p1
-%patch31 -p1
-%patch32 -p1
-%patch33 -p1
-%patch34 -p1
-%patch35 -p1
-%patch36 -p1
-%patch37 -p1
+%patch -P1 -p1
+#%%patch -P2 -p1
+#%%patch -P3 -p1
+#%%patch -P4 -p1
+#%%patch -P5 -p1
+#%%patch -P6 -p1
+#%%patch -P7 -p1
+#%%patch -P8 -p1
+#%%patch -P9 -p1
+#%%patch -P10 -p1
+#%%patch -P11 -p1
+#%%patch -P12 -p1
+#%%patch -P13 -p1
+#%%patch -P14 -p1
+#%%patch -P15 -p1
+#%%patch -P16 -p1
+#%%patch -P17 -p1
+#%%patch -P18 -p1
+#%%patch -P19 -p1
+#%%patch -P20 -p1
+#%%patch -P21 -p1
+#%%patch -P22 -p1
+#%%patch -P23 -p1
+#%%patch -P24 -p1
+#%%patch -P25 -p1
+#%%patch -P26 -p1
+#%%patch -P27 -p1
+#%%patch -P28 -p1
+%patch -P29 -p1
+%patch -P30 -p1
+%patch -P31 -p1
+%patch -P32 -p1
+%patch -P33 -p1
+%patch -P34 -p1
+%patch -P35 -p1
+%patch -P36 -p1
+%patch -P37 -p1
 
 # Fix CPUID model/level values on Conroe/Penryn/Nehalem CPU models
-%patch38 -p1
-%patch39 -p1
-%patch40 -p1
+%patch -P38 -p1
+%patch -P39 -p1
+%patch -P40 -p1
 
-#%patch41 -p1
-%patch42 -p1
-%patch43 -p1
-%patch44 -p1
-%patch45 -p1
-%patch46 -p1
-%patch47 -p1
-%patch48 -p1
-%patch49 -p1
-%patch50 -p1
-%patch51 -p1
-%patch52 -p1
-%patch53 -p1
-%patch54 -p1
-%patch55 -p1
-%patch56 -p1
-%patch57 -p1
-%patch58 -p1
-%patch59 -p1
-%patch60 -p1
-%patch61 -p1
-#%%patch62 -p1
-%patch63 -p1
-%patch64 -p1
-%patch65 -p1
-%patch66 -p1
-%patch67 -p1
-%patch68 -p1
-%patch69 -p1
-%patch70 -p1
-%patch71 -p1
-%patch72 -p1
-#%%patch73 -p1
-%patch74 -p1
-%patch75 -p1
+#%%patch -P41 -p1
+%patch -P42 -p1
+%patch -P43 -p1
+%patch -P44 -p1
+%patch -P45 -p1
+%patch -P46 -p1
+%patch -P47 -p1
+%patch -P48 -p1
+%patch -P49 -p1
+%patch -P50 -p1
+%patch -P51 -p1
+%patch -P52 -p1
+%patch -P53 -p1
+%patch -P54 -p1
+%patch -P55 -p1
+%patch -P56 -p1
+%patch -P57 -p1
+%patch -P58 -p1
+%patch -P59 -p1
+%patch -P60 -p1
+%patch -P61 -p1
+#%%patch -P62 -p1
+%patch -P63 -p1
+%patch -P64 -p1
+%patch -P65 -p1
+%patch -P66 -p1
+%patch -P67 -p1
+%patch -P68 -p1
+%patch -P69 -p1
+%patch -P70 -p1
+%patch -P71 -p1
+%patch -P72 -p1
+#%%patch -P73 -p1
+%patch -P74 -p1
+%patch -P75 -p1
 
-%patch76 -p1
-%patch77 -p1
-%patch78 -p1
-%patch79 -p1
-%patch80 -p1
-%patch81 -p1
-%patch82 -p1
-%patch83 -p1
-%patch84 -p1
-%patch85 -p1
-%patch86 -p1
-%patch87 -p1
-%patch88 -p1
-%patch89 -p1
-#%%patch90 -p1
-#%%patch91 -p1
-#%%patch92 -p1
-%patch93 -p1
-%patch94 -p1
-#%%patch95 -p1
-%patch96 -p1
-%patch97 -p1
-%patch98 -p1
-%patch99 -p1
-%patch100 -p1
-%patch101 -p1
-%patch102 -p1
-%patch103 -p1
-%patch104 -p1
-%patch105 -p1
-%patch106 -p1
-%patch107 -p1
-%patch108 -p1
-%patch109 -p1
-%patch110 -p1
-%patch111 -p1
-%patch112 -p1
-%patch113 -p1
-%patch114 -p1
-%patch115 -p1
-%patch116 -p1
-%patch117 -p1
-%patch118 -p1
-%patch119 -p1
-%patch120 -p1
-%patch121 -p1
-%patch122 -p1
-%patch123 -p1
-%patch124 -p1
-%patch125 -p1
-%patch126 -p1
-%patch127 -p1
-%patch128 -p1
-%patch129 -p1
-%patch130 -p1
-%patch131 -p1
-%patch132 -p1
-%patch133 -p1
-%patch134 -p1
-%patch135 -p1
-%patch136 -p1
-%patch137 -p1
-%patch138 -p1
-%patch139 -p1
-%patch140 -p1
-%patch141 -p1
-%patch142 -p1
-%patch143 -p1
-%patch144 -p1
-%patch145 -p1
-%patch146 -p1
-%patch147 -p1
-%patch148 -p1
-%patch149 -p1
-%patch150 -p1
-%patch151 -p1
-%patch152 -p1
-%patch153 -p1
-%patch154 -p1
-%patch155 -p1
-%patch156 -p1
-%patch157 -p1
-%patch158 -p1
-%patch159 -p1
-%patch160 -p1
-%patch161 -p1
-%patch162 -p1
-%patch163 -p1
-%patch164 -p1
-%patch165 -p1
-%patch166 -p1
-%patch168 -p1
-%patch169 -p1
-%patch170 -p1
-%patch171 -p1
-%patch172 -p1
-%patch173 -p1
-%patch174 -p1
-%patch175 -p1
-%patch176 -p1
-%patch177 -p1
-%patch178 -p1
-%patch179 -p1
-%patch180 -p1
-%patch181 -p1
-%patch182 -p1
-%patch183 -p1
-%patch184 -p1
-%patch185 -p1
-%patch186 -p1
-%patch187 -p1
-%patch188 -p1
-%patch189 -p1
-%patch190 -p1
-%patch191 -p1
-%patch192 -p1
-%patch193 -p1
-%patch194 -p1
-%patch195 -p1
-%patch196 -p1
-%patch197 -p1
-%patch198 -p1
-%patch199 -p1
-%patch200 -p1
-%patch201 -p1
-%patch202 -p1
-%patch203 -p1
-%patch204 -p1
-%patch205 -p1
-%patch206 -p1
-%patch207 -p1
-%patch208 -p1
-%patch209 -p1
-%patch210 -p1
-%patch211 -p1
-%patch212 -p1
-%patch213 -p1
-%patch214 -p1
-%patch215 -p1
-%patch216 -p1
-%patch217 -p1
-%patch218 -p1
-%patch219 -p1
-%patch220 -p1
-%patch221 -p1
-%patch222 -p1
-%patch223 -p1
-%patch224 -p1
-%patch225 -p1
-%patch226 -p1
-%patch227 -p1
-%patch228 -p1
-%patch229 -p1
-%patch230 -p1
-%patch231 -p1
-%patch232 -p1
-%patch233 -p1
-%patch234 -p1
-%patch235 -p1
-%patch236 -p1
-%patch237 -p1
-%patch238 -p1
-%patch239 -p1
-%patch240 -p1
-%patch241 -p1
-%patch242 -p1
-%patch243 -p1
-%patch244 -p1
-%patch245 -p1
-%patch246 -p1
-%patch247 -p1
-%patch248 -p1
-%patch249 -p1
-%patch250 -p1
-%patch251 -p1
-%patch252 -p1
-%patch253 -p1
-%patch254 -p1
-%patch255 -p1
-%patch256 -p1
-%patch257 -p1
-%patch258 -p1
-%patch259 -p1
-%patch260 -p1
-%patch261 -p1
-%patch262 -p1
-%patch263 -p1
-%patch264 -p1
-%patch265 -p1
-%patch266 -p1
-%patch267 -p1
-%patch268 -p1
-%patch269 -p1
-%patch270 -p1
-%patch271 -p1
-%patch272 -p1
-%patch273 -p1
-%patch274 -p1
-%patch275 -p1
-%patch276 -p1
-%patch277 -p1
-%patch278 -p1
-%patch279 -p1
-%patch280 -p1
-%patch281 -p1
-%patch282 -p1
-%patch283 -p1
-%patch284 -p1
-%patch285 -p1
-%patch286 -p1
-%patch287 -p1
-%patch288 -p1
-%patch289 -p1
-%patch290 -p1
-%patch291 -p1
-%patch292 -p1
-%patch293 -p1
-%patch294 -p1
-%patch295 -p1
-%patch296 -p1
-%patch297 -p1
-%patch298 -p1
-%patch299 -p1
-%patch300 -p1
-%patch301 -p1
-%patch302 -p1
-%patch303 -p1
-%patch304 -p1
-%patch305 -p1
-%patch306 -p1
-%patch307 -p1
-%patch308 -p1
-%patch309 -p1
-%patch310 -p1
-%patch311 -p1
-%patch312 -p1
-%patch313 -p1
-%patch314 -p1
-%patch315 -p1
-%patch316 -p1
-%patch317 -p1
-%patch318 -p1
-%patch319 -p1
-%patch320 -p1
-%patch321 -p1
-%patch322 -p1
-%patch323 -p1
-%patch324 -p1
-%patch325 -p1
-%patch326 -p1
-%patch327 -p1
-%patch328 -p1
-%patch329 -p1
-%patch330 -p1
-%patch331 -p1
-%patch332 -p1
-%patch333 -p1
-%patch334 -p1
-%patch335 -p1
-%patch336 -p1
-%patch337 -p1
-%patch338 -p1
-%patch339 -p1
-%patch340 -p1
-%patch341 -p1
-%patch342 -p1
-%patch343 -p1
-%patch344 -p1
-%patch345 -p1
-%patch346 -p1
-%patch347 -p1
-%patch348 -p1
-%patch349 -p1
-%patch350 -p1
-%patch351 -p1
-%patch352 -p1
-%patch353 -p1
-%patch354 -p1
-%patch355 -p1
-%patch356 -p1
-%patch357 -p1
-%patch358 -p1
-%patch359 -p1
-%patch360 -p1
-%patch361 -p1
-%patch362 -p1
-%patch363 -p1
-%patch364 -p1
-%patch365 -p1
-%patch366 -p1
-%patch367 -p1
-%patch368 -p1
-%patch369 -p1
-%patch370 -p1
-%patch371 -p1
-%patch372 -p1
-%patch373 -p1
-%patch374 -p1
-%patch375 -p1
-%patch376 -p1
-%patch377 -p1
-%patch378 -p1
-%patch379 -p1
-%patch380 -p1
-%patch381 -p1
-%patch382 -p1
-%patch383 -p1
-%patch384 -p1
-%patch385 -p1
-%patch386 -p1
-%patch387 -p1
-%patch388 -p1
-%patch389 -p1
-%patch390 -p1
-%patch391 -p1
-%patch392 -p1
-%patch393 -p1
-%patch394 -p1
-%patch395 -p1
-%patch396 -p1
-%patch397 -p1
-%patch398 -p1
-%patch399 -p1
-%patch400 -p1
-%patch401 -p1
-%patch402 -p1
-%patch403 -p1
-%patch404 -p1
-%patch405 -p1
-%patch406 -p1
-%patch407 -p1
-%patch408 -p1
-%patch409 -p1
-%patch410 -p1
-%patch411 -p1
-%patch412 -p1
-%patch413 -p1
-%patch414 -p1
-%patch415 -p1
-%patch416 -p1
-%patch417 -p1
-%patch418 -p1
-%patch419 -p1
-%patch420 -p1
-%patch421 -p1
-%patch422 -p1
-%patch423 -p1
-%patch424 -p1
-%patch425 -p1
-%patch426 -p1
-%patch427 -p1
-%patch428 -p1
-%patch429 -p1
-%patch430 -p1
-%patch431 -p1
-%patch432 -p1
-%patch433 -p1
-%patch434 -p1
-%patch435 -p1
-%patch436 -p1
-%patch437 -p1
-%patch438 -p1
-%patch439 -p1
-%patch440 -p1
-%patch441 -p1
-%patch442 -p1
-%patch443 -p1
-%patch444 -p1
-%patch445 -p1
-%patch446 -p1
-%patch447 -p1
-%patch448 -p1
-%patch449 -p1
-%patch450 -p1
-%patch451 -p1
-%patch452 -p1
-%patch453 -p1
-%patch454 -p1
-%patch455 -p1
-%patch456 -p1
-%patch457 -p1
-%patch458 -p1
-%patch459 -p1
-%patch460 -p1
-%patch461 -p1
-%patch462 -p1
-%patch463 -p1
-%patch464 -p1
-%patch465 -p1
-%patch466 -p1
-%patch467 -p1
-%patch468 -p1
-%patch469 -p1
-%patch470 -p1
-%patch471 -p1
-%patch472 -p1
-%patch473 -p1
-%patch474 -p1
-%patch475 -p1
-%patch476 -p1
-%patch477 -p1
-%patch478 -p1
-%patch479 -p1
-%patch480 -p1
-%patch481 -p1
-#%patch482 -p1
-%patch483 -p1
-%patch484 -p1
-%patch485 -p1
-%patch486 -p1
-%patch487 -p1
-%patch488 -p1
-%patch489 -p1
-%patch490 -p1
-%patch491 -p1
-%patch492 -p1
-%patch493 -p1
-%patch494 -p1
-%patch495 -p1
-%patch496 -p1
-%patch497 -p1
-%patch498 -p1
-%patch499 -p1
-%patch500 -p1
-%patch501 -p1
-%patch502 -p1
-%patch503 -p1
-%patch504 -p1
-%patch505 -p1
-%patch506 -p1
-%patch507 -p1
-%patch508 -p1
-%patch509 -p1
-%patch510 -p1
-%patch511 -p1
-%patch512 -p1
-%patch513 -p1
-%patch514 -p1
-%patch515 -p1
-%patch516 -p1
-%patch517 -p1
-%patch518 -p1
-%patch519 -p1
-%patch520 -p1
-%patch521 -p1
-%patch522 -p1
-%patch523 -p1
-%patch524 -p1
-%patch525 -p1
-%patch526 -p1
-%patch527 -p1
-%patch528 -p1
-%patch529 -p1
-%patch530 -p1
-%patch531 -p1
-%patch532 -p1
-%patch533 -p1
-%patch534 -p1
-%patch535 -p1
-%patch536 -p1
-%patch537 -p1
-%patch538 -p1
-%patch539 -p1
-%patch540 -p1
-%patch541 -p1
-%patch542 -p1
-%patch543 -p1
-%patch544 -p1
-%patch545 -p1
-%patch546 -p1
-%patch547 -p1
-%patch548 -p1
-%patch549 -p1
-%patch550 -p1
-%patch551 -p1
-%patch552 -p1
-%patch553 -p1
-%patch554 -p1
-%patch555 -p1
-%patch556 -p1
-%patch557 -p1
-%patch558 -p1
-%patch559 -p1
-%patch560 -p1
-%patch561 -p1
-%patch562 -p1
-%patch563 -p1
-%patch564 -p1
-%patch565 -p1
-%patch566 -p1
-%patch567 -p1
-%patch568 -p1
-%patch569 -p1
-%patch570 -p1
-%patch571 -p1
-%patch572 -p1
-%patch573 -p1
-%patch574 -p1
-%patch575 -p1
-%patch576 -p1
-%patch577 -p1
-%patch578 -p1
-%patch579 -p1
-%patch580 -p1
-%patch581 -p1
-%patch582 -p1
-%patch583 -p1
-%patch584 -p1
-%patch585 -p1
-%patch586 -p1
-%patch587 -p1
-%patch588 -p1
-%patch589 -p1
-%patch590 -p1
-%patch591 -p1
-%patch592 -p1
-%patch593 -p1
-%patch594 -p1
-%patch595 -p1
-%patch596 -p1
-%patch597 -p1
-%patch598 -p1
-%patch599 -p1
-%patch600 -p1
-%patch601 -p1
-%patch602 -p1
-%patch603 -p1
-%patch604 -p1
-%patch605 -p1
-%patch606 -p1
-%patch607 -p1
-%patch608 -p1
-%patch609 -p1
-%patch610 -p1
-%patch611 -p1
-%patch612 -p1
-%patch613 -p1
-%patch614 -p1
-%patch615 -p1
-%patch616 -p1
-%patch617 -p1
-%patch618 -p1
-%patch619 -p1
-%patch620 -p1
-%patch621 -p1
-%patch622 -p1
-%patch623 -p1
-%patch624 -p1
-%patch625 -p1
-%patch626 -p1
-%patch627 -p1
-%patch628 -p1
-%patch629 -p1
-%patch630 -p1
-%patch631 -p1
-%patch632 -p1
-%patch633 -p1
-%patch634 -p1
-%patch635 -p1
-%patch636 -p1
-%patch637 -p1
-%patch638 -p1
-%patch639 -p1
-%patch640 -p1
-%patch641 -p1
-%patch642 -p1
-%patch643 -p1
-%patch644 -p1
-%patch645 -p1
-%patch646 -p1
-%patch647 -p1
-%patch648 -p1
-%patch649 -p1
-%patch650 -p1
-%patch651 -p1
-%patch652 -p1
-%patch653 -p1
-%patch654 -p1
-%patch655 -p1
-%patch656 -p1
-%patch657 -p1
-%patch658 -p1
-%patch659 -p1
-%patch660 -p1
-%patch661 -p1
-%patch662 -p1
-%patch663 -p1
-%patch664 -p1
-%patch665 -p1
-%patch666 -p1
-%patch667 -p1
-%patch668 -p1
-%patch669 -p1
-%patch670 -p1
-%patch671 -p1
-%patch672 -p1
-%patch673 -p1
-%patch674 -p1
-%patch675 -p1
-%patch676 -p1
-%patch677 -p1
-%patch678 -p1
-%patch679 -p1
-%patch680 -p1
-%patch681 -p1
-%patch682 -p1
-%patch683 -p1
-%patch684 -p1
-%patch685 -p1
-%patch686 -p1
-%patch687 -p1
-%patch688 -p1
-%patch689 -p1
-%patch690 -p1
-%patch691 -p1
-%patch692 -p1
-%patch693 -p1
-%patch694 -p1
-%patch695 -p1
-%patch696 -p1
-%patch697 -p1
-%patch698 -p1
-%patch699 -p1
-%patch700 -p1
-%patch701 -p1
-%patch702 -p1
-%patch703 -p1
-%patch704 -p1
-%patch705 -p1
-%patch706 -p1
-%patch707 -p1
-%patch708 -p1
-%patch709 -p1
-%patch710 -p1
-%patch711 -p1
-%patch712 -p1
-%patch713 -p1
-%patch714 -p1
-%patch715 -p1
-%patch716 -p1
-%patch717 -p1
-%patch718 -p1
-%patch719 -p1
-%patch720 -p1
-%patch721 -p1
-%patch722 -p1
-%patch723 -p1
-%patch724 -p1
-%patch725 -p1
-%patch726 -p1
-%patch727 -p1
-%patch728 -p1
-%patch729 -p1
-%patch730 -p1
-%patch731 -p1
-%patch732 -p1
-%patch733 -p1
-%patch734 -p1
-%patch735 -p1
-%patch736 -p1
-%patch737 -p1
-%patch738 -p1
-%patch739 -p1
-%patch740 -p1
-%patch741 -p1
-%patch742 -p1
-%patch743 -p1
-%patch744 -p1
-%patch745 -p1
-%patch746 -p1
-%patch747 -p1
-%patch748 -p1
-%patch749 -p1
-%patch750 -p1
-%patch751 -p1
-%patch752 -p1
-%patch753 -p1
-%patch754 -p1
-%patch755 -p1
-%patch756 -p1
-%patch757 -p1
-%patch758 -p1
-%patch759 -p1
-%patch760 -p1
-%patch761 -p1
-%patch762 -p1
-%patch763 -p1
-%patch764 -p1
-%patch765 -p1
-%patch766 -p1
-%patch767 -p1
-%patch768 -p1
-%patch769 -p1
-%patch770 -p1
-%patch771 -p1
-%patch772 -p1
-%patch773 -p1
-%patch774 -p1
-%patch775 -p1
-%patch776 -p1
-%patch777 -p1
-%patch778 -p1
-%patch779 -p1
-%patch780 -p1
-%patch781 -p1
-%patch782 -p1
-%patch783 -p1
-%patch784 -p1
-%patch785 -p1
-%patch786 -p1
-%patch787 -p1
-%patch788 -p1
-%patch789 -p1
-%patch790 -p1
-%patch791 -p1
-%patch792 -p1
-%patch793 -p1
-%patch794 -p1
-%patch795 -p1
-%patch796 -p1
-%patch797 -p1
-%patch798 -p1
-%patch799 -p1
-%patch800 -p1
-%patch801 -p1
-%patch802 -p1
-%patch803 -p1
-%patch804 -p1
-%patch805 -p1
-%patch806 -p1
-%patch807 -p1
-%patch808 -p1
-%patch809 -p1
-%patch810 -p1
-%patch811 -p1
-%patch812 -p1
-%patch813 -p1
-%patch814 -p1
-%patch815 -p1
-%patch816 -p1
-%patch817 -p1
-%patch818 -p1
-%patch819 -p1
-%patch820 -p1
-%patch821 -p1
-%patch822 -p1
-%patch823 -p1
-%patch824 -p1
-%patch825 -p1
-%patch826 -p1
-%patch827 -p1
-%patch828 -p1
-%patch829 -p1
-%patch830 -p1
-%patch831 -p1
-%patch832 -p1
-%patch833 -p1
-%patch834 -p1
-%patch835 -p1
-%patch836 -p1
-%patch837 -p1
-%patch838 -p1
-%patch839 -p1
-%patch840 -p1
-%patch841 -p1
-%patch842 -p1
-%patch843 -p1
-%patch844 -p1
-%patch845 -p1
-%patch846 -p1
-%patch847 -p1
-%patch848 -p1
-%patch849 -p1
-%patch850 -p1
-%patch851 -p1
-%patch852 -p1
-%patch853 -p1
-%patch854 -p1
-%patch855 -p1
-%patch856 -p1
-%patch857 -p1
-%patch858 -p1
-%patch859 -p1
-%patch860 -p1
-%patch861 -p1
-%patch862 -p1
-%patch863 -p1
-%patch864 -p1
-%patch865 -p1
-%patch866 -p1
-%patch867 -p1
-%patch868 -p1
-%patch869 -p1
-%patch870 -p1
-%patch871 -p1
-%patch872 -p1
-%patch873 -p1
-%patch874 -p1
-%patch875 -p1
-%patch876 -p1
-%patch877 -p1
-%patch878 -p1
-%patch879 -p1
-%patch880 -p1
-%patch881 -p1
-%patch882 -p1
-%patch883 -p1
-%patch884 -p1
-%patch885 -p1
-%patch886 -p1
-%patch887 -p1
-%patch888 -p1
-%patch889 -p1
-%patch890 -p1
-%patch891 -p1
-%patch892 -p1
-%patch893 -p1
-%patch894 -p1
-%patch895 -p1
-%patch896 -p1
-%patch897 -p1
-%patch898 -p1
-%patch899 -p1
-%patch900 -p1
-%patch901 -p1
-%patch902 -p1
-%patch903 -p1
-%patch904 -p1
-%patch905 -p1
-%patch906 -p1
-%patch907 -p1
-%patch908 -p1
-%patch909 -p1
-%patch910 -p1
-%patch911 -p1
-%patch912 -p1
-%patch913 -p1
-%patch914 -p1
-%patch915 -p1
-%patch916 -p1
-%patch917 -p1
-%patch918 -p1
-%patch919 -p1
-%patch920 -p1
-%patch921 -p1
-%patch922 -p1
-%patch923 -p1
-%patch924 -p1
-%patch925 -p1
-%patch926 -p1
-%patch927 -p1
-%patch928 -p1
-%patch929 -p1
-%patch930 -p1
-%patch931 -p1
-%patch932 -p1
-%patch933 -p1
-%patch934 -p1
-%patch935 -p1
-%patch936 -p1
-%patch937 -p1
-%patch938 -p1
-%patch939 -p1
-%patch940 -p1
-%patch941 -p1
-%patch942 -p1
-%patch943 -p1
-%patch944 -p1
-%patch945 -p1
-%patch946 -p1
-%patch947 -p1
-%patch948 -p1
-%patch949 -p1
-%patch950 -p1
-%patch951 -p1
-%patch952 -p1
-%patch953 -p1
-%patch954 -p1
-%patch955 -p1
-%patch956 -p1
-%patch957 -p1
-%patch958 -p1
-%patch959 -p1
-%patch960 -p1
-%patch961 -p1
-%patch962 -p1
-%patch963 -p1
-%patch964 -p1
-%patch965 -p1
-%patch966 -p1
-%patch967 -p1
-%patch968 -p1
-%patch969 -p1
-%patch970 -p1
-%patch971 -p1
-%patch972 -p1
-%patch973 -p1
-%patch974 -p1
-%patch975 -p1
-%patch976 -p1
-%patch977 -p1
-%patch978 -p1
-%patch979 -p1
-%patch980 -p1
-%patch981 -p1
-%patch982 -p1
-%patch983 -p1
-%patch984 -p1
-%patch985 -p1
-%patch986 -p1
-%patch987 -p1
-%patch988 -p1
-%patch989 -p1
-%patch990 -p1
-%patch991 -p1
-%patch992 -p1
-%patch993 -p1
-%patch994 -p1
-%patch995 -p1
-%patch996 -p1
-%patch997 -p1
-%patch998 -p1
-%patch999 -p1
-%patch1000 -p1
-%patch1001 -p1
-%patch1002 -p1
-%patch1003 -p1
-%patch1004 -p1
-%patch1005 -p1
-%patch1006 -p1
-%patch1007 -p1
-%patch1008 -p1
-%patch1009 -p1
-%patch1010 -p1
-%patch1011 -p1
-%patch1012 -p1
-%patch1013 -p1
-%patch1014 -p1
-%patch1015 -p1
-%patch1016 -p1
-%patch1017 -p1
-%patch1018 -p1
-%patch1019 -p1
-%patch1020 -p1
-%patch1021 -p1
-%patch1022 -p1
-%patch1023 -p1
-%patch1024 -p1
-%patch1025 -p1
-%patch1026 -p1
-%patch1027 -p1
-%patch1028 -p1
-%patch1029 -p1
-%patch1030 -p1
-%patch1031 -p1
-%patch1032 -p1
-%patch1033 -p1
-%patch1034 -p1
-%patch1035 -p1
-%patch1036 -p1
-%patch1037 -p1
-%patch1038 -p1
-%patch1039 -p1
-%patch1040 -p1
-%patch1041 -p1
-%patch1042 -p1
-%patch1043 -p1
-%patch1044 -p1
-%patch1045 -p1
-%patch1046 -p1
-%patch1047 -p1
-%patch1048 -p1
-%patch1049 -p1
-%patch1050 -p1
-%patch1051 -p1
-%patch1052 -p1
-%patch1053 -p1
-%patch1054 -p1
-%patch1055 -p1
-%patch1056 -p1
-%patch1057 -p1
-%patch1058 -p1
-%patch1059 -p1
-%patch1060 -p1
-%patch1061 -p1
-%patch1062 -p1
-%patch1063 -p1
-%patch1064 -p1
-%patch1065 -p1
-%patch1066 -p1
-%patch1067 -p1
-%patch1068 -p1
-%patch1069 -p1
-%patch1070 -p1
-%patch1071 -p1
-%patch1072 -p1
-%patch1073 -p1
-%patch1074 -p1
-%patch1075 -p1
-%patch1076 -p1
-%patch1077 -p1
-%patch1078 -p1
-%patch1079 -p1
-%patch1080 -p1
-%patch1081 -p1
-%patch1082 -p1
-%patch1083 -p1
-%patch1084 -p1
-%patch1085 -p1
-%patch1086 -p1
-%patch1087 -p1
-%patch1088 -p1
-%patch1089 -p1
-%patch1090 -p1
-%patch1091 -p1
-%patch1092 -p1
-%patch1093 -p1
-%patch1094 -p1
-%patch1095 -p1
-%patch1096 -p1
-%patch1097 -p1
-%patch1098 -p1
-%patch1099 -p1
-%patch1100 -p1
-%patch1101 -p1
-%patch1102 -p1
-%patch1103 -p1
-%patch1104 -p1
-%patch1105 -p1
-%patch1106 -p1
-%patch1107 -p1
-%patch1108 -p1
-%patch1109 -p1
-%patch1110 -p1
-%patch1111 -p1
-%patch1112 -p1
-%patch1113 -p1
-%patch1114 -p1
-%patch1115 -p1
-%patch1116 -p1
-%patch1117 -p1
-%patch1118 -p1
-%patch1119 -p1
-%patch1120 -p1
-%patch1121 -p1
-%patch1122 -p1
-%patch1123 -p1
-%patch1124 -p1
-%patch1125 -p1
-%patch1126 -p1
-%patch1127 -p1
-%patch1128 -p1
-%patch1129 -p1
-%patch1130 -p1
-%patch1131 -p1
-%patch1132 -p1
-%patch1133 -p1
-%patch1134 -p1
-%patch1135 -p1
-%patch1136 -p1
-%patch1137 -p1
-%patch1138 -p1
-%patch1139 -p1
-%patch1140 -p1
-%patch1141 -p1
-%patch1142 -p1
-%patch1143 -p1
-%patch1144 -p1
-%patch1145 -p1
-%patch1146 -p1
-%patch1147 -p1
-%patch1148 -p1
-%patch1149 -p1
-%patch1150 -p1
-%patch1151 -p1
-%patch1152 -p1
-%patch1153 -p1
-%patch1154 -p1
-%patch1155 -p1
-%patch1156 -p1
-%patch1157 -p1
-%patch1158 -p1
-%patch1159 -p1
-%patch1160 -p1
-%patch1161 -p1
-%patch1162 -p1
-%patch1163 -p1
-%patch1164 -p1
-%patch1165 -p1
-%patch1166 -p1
-%patch1167 -p1
-%patch1168 -p1
-%patch1169 -p1
-%patch1170 -p1
-%patch1171 -p1
-%patch1172 -p1
-%patch1173 -p1
-%patch1174 -p1
-%patch1175 -p1
-%patch1176 -p1
-%patch1177 -p1
-%patch1178 -p1
-%patch1179 -p1
-%patch1180 -p1
-%patch1181 -p1
-%patch1182 -p1
-%patch1183 -p1
-%patch1184 -p1
-%patch1185 -p1
-%patch1186 -p1
-%patch1187 -p1
-%patch1189 -p1
-%patch1190 -p1
-%patch1191 -p1
-%patch1192 -p1
-%patch1193 -p1
-%patch1194 -p1
-%patch1195 -p1
-%patch1196 -p1
-%patch1197 -p1
-%patch1198 -p1
-%patch1201 -p1
-%patch1202 -p1
-%patch1203 -p1
-%patch1204 -p1
-%patch1205 -p1
-%patch1206 -p1
-%patch1207 -p1
-%patch1208 -p1
-%patch1209 -p1
-%patch1210 -p1
-%patch1211 -p1
-%patch1212 -p1
-%patch1213 -p1
-%patch1214 -p1
-%patch1215 -p1
-%patch1216 -p1
-%patch1217 -p1
-%patch1218 -p1
-%patch1219 -p1
-%patch1220 -p1
-%patch1221 -p1
-%patch1222 -p1
-%patch1223 -p1
-%patch1224 -p1
-%patch1225 -p1
-%patch1226 -p1
-%patch1227 -p1
-%patch1228 -p1
-%patch1229 -p1
-%patch1230 -p1
-%patch1231 -p1
-%patch1232 -p1
-%patch1233 -p1
-%patch1234 -p1
-%patch1235 -p1
-%patch1236 -p1
-%patch1237 -p1
-%patch1238 -p1
-%patch1239 -p1
-%patch1240 -p1
-%patch1241 -p1
-%patch1242 -p1
-%patch1243 -p1
-%patch1244 -p1
-%patch1245 -p1
-%patch1246 -p1
-%patch1247 -p1
-%patch1248 -p1
-%patch1249 -p1
-%patch1250 -p1
-%patch1251 -p1
-%patch1252 -p1
-%patch1253 -p1
-%patch1254 -p1
-%patch1255 -p1
-%patch1256 -p1
-%patch1257 -p1
-%patch1258 -p1
-%patch1259 -p1
-%patch1260 -p1
-%patch1261 -p1
-%patch1262 -p1
-%patch1263 -p1
-%patch1264 -p1
-%patch1265 -p1
-%patch1266 -p1
-%patch1267 -p1
-%patch1268 -p1
-%patch1269 -p1
-%patch1270 -p1
-%patch1271 -p1
-%patch1272 -p1
-%patch1273 -p1
-%patch1274 -p1
-%patch1275 -p1
-%patch1276 -p1
-%patch1277 -p1
-%patch1278 -p1
-%patch1279 -p1
-%patch1280 -p1
-%patch1281 -p1
-%patch1282 -p1
-%patch1283 -p1
-%patch1284 -p1
-%patch1285 -p1
-%patch1286 -p1
-%patch1287 -p1
-%patch1288 -p1
-%patch1289 -p1
-%patch1290 -p1
-%patch1291 -p1
-%patch1292 -p1
-%patch1293 -p1
-%patch1294 -p1
-%patch1295 -p1
-%patch1296 -p1
-%patch1297 -p1
-%patch1298 -p1
-%patch1299 -p1
-%patch1300 -p1
-%patch1301 -p1
-%patch1302 -p1
-%patch1303 -p1
-%patch1304 -p1
-%patch1305 -p1
-%patch1306 -p1
-%patch1307 -p1
-%patch1308 -p1
-%patch1309 -p1
-%patch1310 -p1
-%patch1311 -p1
-%patch1312 -p1
-%patch1313 -p1
-%patch1314 -p1
-%patch1315 -p1
-%patch1316 -p1
-%patch1317 -p1
-%patch1318 -p1
-%patch1319 -p1
-%patch1320 -p1
-%patch1321 -p1
-%patch1322 -p1
-%patch1323 -p1
-%patch1324 -p1
-%patch1325 -p1
-%patch1326 -p1
-%patch1327 -p1
-%patch1328 -p1
-%patch1329 -p1
-%patch1330 -p1
-%patch1331 -p1
-%patch1332 -p1
-%patch1333 -p1
-%patch1334 -p1
-%patch1335 -p1
-%patch1336 -p1
-%patch1337 -p1
-%patch1338 -p1
-%patch1339 -p1
-%patch1340 -p1
-%patch1341 -p1
-%patch1342 -p1
-%patch1343 -p1
-%patch1344 -p1
-%patch1345 -p1
-%patch1346 -p1
-%patch1347 -p1
-%patch1348 -p1
-%patch1349 -p1
-%patch1350 -p1
-%patch1351 -p1
-%patch1352 -p1
-%patch1353 -p1
-%patch1354 -p1
-%patch1355 -p1
-%patch1356 -p1
-%patch1357 -p1
-%patch1358 -p1
-%patch1359 -p1
-%patch1360 -p1
-%patch1361 -p1
-%patch1362 -p1
-%patch1363 -p1
-%patch1364 -p1
-%patch1365 -p1
-%patch1366 -p1
-%patch1367 -p1
-%patch1368 -p1
-%patch1369 -p1
-%patch1370 -p1
-%patch1371 -p1
-%patch1372 -p1
-%patch1373 -p1
-%patch1374 -p1
-%patch1375 -p1
-%patch1376 -p1
-%patch1377 -p1
-%patch1378 -p1
-%patch1379 -p1
-%patch1380 -p1
-%patch1381 -p1
-%patch1382 -p1
-%patch1383 -p1
-%patch1384 -p1
-%patch1385 -p1
-%patch1386 -p1
-%patch1387 -p1
-%patch1388 -p1
-%patch1389 -p1
-%patch1390 -p1
-%patch1391 -p1
-%patch1392 -p1
-%patch1393 -p1
-%patch1394 -p1
-%patch1395 -p1
-%patch1396 -p1
-%patch1397 -p1
-%patch1398 -p1
-%patch1399 -p1
-%patch1400 -p1
-%patch1401 -p1
-%patch1402 -p1
-%patch1403 -p1
-%patch1404 -p1
-%patch1405 -p1
-%patch1406 -p1
-%patch1407 -p1
-%patch1408 -p1
-%patch1409 -p1
-%patch1410 -p1
-%patch1411 -p1
-%patch1412 -p1
-%patch1413 -p1
-%patch1414 -p1
-%patch1415 -p1
-%patch1416 -p1
-%patch1417 -p1
-%patch1418 -p1
-%patch1419 -p1
-%patch1420 -p1
-%patch1421 -p1
-%patch1422 -p1
-%patch1423 -p1
-%patch1424 -p1
-%patch1425 -p1
-%patch1426 -p1
-%patch1427 -p1
-%patch1428 -p1
-%patch1429 -p1
-%patch1430 -p1
-%patch1431 -p1
-%patch1432 -p1
-%patch1433 -p1
-%patch1434 -p1
-%patch1435 -p1
-%patch1436 -p1
-%patch1437 -p1
-%patch1438 -p1
-%patch1439 -p1
-%patch1440 -p1
-%patch1441 -p1
-%patch1442 -p1
-%patch1443 -p1
-%patch1444 -p1
-%patch1445 -p1
-%patch1446 -p1
-%patch1447 -p1
-%patch1448 -p1
-%patch1449 -p1
-%patch1450 -p1
-%patch1451 -p1
-%patch1452 -p1
-%patch1453 -p1
-%patch1454 -p1
-%patch1455 -p1
-%patch1456 -p1
-%patch1457 -p1
-%patch1458 -p1
-%patch1459 -p1
-%patch1460 -p1
-%patch1461 -p1
-%patch1462 -p1
-%patch1463 -p1
-%patch1464 -p1
-%patch1465 -p1
-%patch1466 -p1
-%patch1467 -p1
-%patch1468 -p1
-%patch1469 -p1
-%patch1470 -p1
-%patch1471 -p1
-%patch1472 -p1
-%patch1473 -p1
-%patch1474 -p1
-%patch1475 -p1
-%patch1476 -p1
-%patch1477 -p1
-%patch1478 -p1
-%patch1479 -p1
-%patch1480 -p1
-%patch1481 -p1
-%patch1482 -p1
-%patch1483 -p1
-%patch1484 -p1
-%patch1485 -p1
-%patch1486 -p1
-%patch1487 -p1
-%patch1488 -p1
-%patch1489 -p1
-%patch1490 -p1
-%patch1491 -p1
-%patch1492 -p1
-%patch1493 -p1
-%patch1494 -p1
-%patch1495 -p1
-%patch1496 -p1
-%patch1497 -p1
-%patch1498 -p1
-%patch1499 -p1
-%patch1500 -p1
-%patch1501 -p1
-%patch1502 -p1
-%patch1503 -p1
-%patch1504 -p1
-%patch1505 -p1
-%patch1506 -p1
-%patch1507 -p1
-%patch1508 -p1
-%patch1509 -p1
-%patch1510 -p1
-%patch1511 -p1
-%patch1512 -p1
-%patch1513 -p1
-%patch1514 -p1
-%patch1515 -p1
-%patch1516 -p1
-%patch1517 -p1
-%patch1518 -p1
-%patch1519 -p1
-%patch1520 -p1
-%patch1521 -p1
-%patch1522 -p1
-%patch1523 -p1
-%patch1524 -p1
-%patch1525 -p1
-%patch1526 -p1
-%patch1527 -p1
-%patch1528 -p1
-%patch1529 -p1
-%patch1530 -p1
-%patch1531 -p1
-%patch1532 -p1
-%patch1533 -p1
-%patch1534 -p1
-%patch1535 -p1
-%patch1536 -p1
-%patch1537 -p1
-%patch1538 -p1
-%patch1539 -p1
-%patch1540 -p1
-%patch1541 -p1
-%patch1542 -p1
-%patch1543 -p1
-%patch1544 -p1
-%patch1545 -p1
-%patch1546 -p1
-%patch1547 -p1
-%patch1548 -p1
-%patch1549 -p1
-%patch1550 -p1
-%patch1551 -p1
-%patch1552 -p1
-%patch1553 -p1
-%patch1554 -p1
-%patch1555 -p1
-%patch1556 -p1
-%patch1557 -p1
-%patch1558 -p1
-%patch1559 -p1
-%patch1560 -p1
-%patch1561 -p1
-%patch1562 -p1
-%patch1563 -p1
-%patch1564 -p1
-%patch1565 -p1
-%patch1566 -p1
-%patch1567 -p1
-%patch1568 -p1
-%patch1569 -p1
-%patch1570 -p1
-%patch1571 -p1
-%patch1572 -p1
-%patch1573 -p1
-%patch1574 -p1
-%patch1575 -p1
-%patch1576 -p1
-%patch1577 -p1
-%patch1578 -p1
-%patch1579 -p1
-%patch1580 -p1
-%patch1581 -p1
-%patch1582 -p1
-%patch1583 -p1
-%patch1584 -p1
-%patch1585 -p1
-%patch1586 -p1
-%patch1587 -p1
-%patch1588 -p1
-%patch1589 -p1
-%patch1590 -p1
-%patch1591 -p1
-%patch1592 -p1
-%patch1593 -p1
-%patch1594 -p1
-%patch1595 -p1
-%patch1596 -p1
-%patch1597 -p1
-%patch1598 -p1
-%patch1599 -p1
-%patch1600 -p1
-%patch1601 -p1
-%patch1602 -p1
-%patch1603 -p1
-%patch1604 -p1
-%patch1605 -p1
-%patch1606 -p1
-%patch1607 -p1
-%patch1608 -p1
-%patch1609 -p1
-%patch1610 -p1
-%patch1611 -p1
-%patch1612 -p1
-%patch1613 -p1
-%patch1614 -p1
-%patch1615 -p1
-%patch1616 -p1
-%patch1617 -p1
-%patch1618 -p1
-%patch1619 -p1
-%patch1620 -p1
-%patch1621 -p1
-%patch1622 -p1
-%patch1623 -p1
-%patch1624 -p1
-%patch1625 -p1
-%patch1626 -p1
-%patch1627 -p1
-%patch1628 -p1
-%patch1629 -p1
-%patch1630 -p1
-%patch1631 -p1
-%patch1632 -p1
-%patch1633 -p1
-%patch1634 -p1
-%patch1635 -p1
-%patch1636 -p1
-%patch1637 -p1
-%patch1638 -p1
-%patch1639 -p1
-%patch1640 -p1
-%patch1641 -p1
-%patch1642 -p1
-%patch1643 -p1
-%patch1644 -p1
-%patch1645 -p1
-%patch1646 -p1
-%patch1647 -p1
-%patch1648 -p1
-%patch1649 -p1
-%patch1650 -p1
-%patch1651 -p1
-%patch1652 -p1
-%patch1653 -p1
-%patch1654 -p1
-%patch1655 -p1
-%patch1656 -p1
-%patch1657 -p1
-%patch1658 -p1
-%patch1659 -p1
-%patch1660 -p1
-%patch1661 -p1
-%patch1662 -p1
-%patch1663 -p1
-%patch1664 -p1
-%patch1665 -p1
-%patch1666 -p1
-%patch1667 -p1
-%patch1668 -p1
-%patch1669 -p1
-%patch1670 -p1
-%patch1671 -p1
-%patch1672 -p1
-%patch1673 -p1
-%patch1674 -p1
-%patch1675 -p1
-%patch1676 -p1
-%patch1677 -p1
-%patch1678 -p1
-%patch1679 -p1
-%patch1680 -p1
-%patch1681 -p1
-%patch1682 -p1
-%patch1683 -p1
-%patch1684 -p1
-%patch1685 -p1
-%patch1686 -p1
-%patch1687 -p1
-%patch1688 -p1
-%patch1689 -p1
-%patch1690 -p1
-%patch1691 -p1
-%patch1692 -p1
-%patch1693 -p1
-%patch1694 -p1
-%patch1695 -p1
-%patch1696 -p1
-%patch1697 -p1
-%patch1698 -p1
-%patch1699 -p1
-%patch1700 -p1
-%patch1701 -p1
-%patch1702 -p1
-%patch1703 -p1
-%patch1704 -p1
-%patch1705 -p1
-%patch1706 -p1
-%patch1707 -p1
-%patch1708 -p1
-%patch1709 -p1
-%patch1710 -p1
-%patch1711 -p1
-%patch1712 -p1
-%patch1713 -p1
-%patch1714 -p1
-%patch1715 -p1
-%patch1716 -p1
-%patch1717 -p1
-%patch1718 -p1
-%patch1719 -p1
-%patch1720 -p1
-%patch1721 -p1
-%patch1722 -p1
-%patch1723 -p1
-%patch1724 -p1
-%patch1725 -p1
-%patch1726 -p1
-%patch1727 -p1
-%patch1728 -p1
-%patch1729 -p1
-%patch1730 -p1
-%patch1731 -p1
-%patch1732 -p1
-%patch1733 -p1
-%patch1734 -p1
-%patch1735 -p1
-%patch1736 -p1
-%patch1737 -p1
-%patch1738 -p1
-%patch1739 -p1
-%patch1740 -p1
-%patch1741 -p1
-%patch1742 -p1
-%patch1743 -p1
-%patch1744 -p1
-%patch1745 -p1
-%patch1746 -p1
-%patch1747 -p1
-%patch1748 -p1
-%patch1749 -p1
-%patch1750 -p1
-%patch1751 -p1
-%patch1752 -p1
-%patch1753 -p1
-%patch1754 -p1
-%patch1755 -p1
-%patch1756 -p1
-%patch1757 -p1
-%patch1758 -p1
-%patch1759 -p1
-%patch1760 -p1
-%patch1761 -p1
-%patch1762 -p1
-%patch1763 -p1
-%patch1764 -p1
-%patch1765 -p1
-%patch1766 -p1
-%patch1767 -p1
-%patch1768 -p1
-%patch1769 -p1
-%patch1770 -p1
-%patch1771 -p1
-%patch1772 -p1
-%patch1773 -p1
-%patch1774 -p1
-%patch1775 -p1
-%patch1776 -p1
-%patch1777 -p1
-%patch1778 -p1
-%patch1779 -p1
-%patch1780 -p1
-%patch1781 -p1
-%patch1782 -p1
-%patch1783 -p1
-%patch1784 -p1
-%patch1785 -p1
-%patch1786 -p1
-%patch1787 -p1
-%patch1788 -p1
-%patch1789 -p1
-%patch1790 -p1
-%patch1791 -p1
-%patch1792 -p1
-%patch1793 -p1
-%patch1794 -p1
-%patch1795 -p1
-%patch1796 -p1
-%patch1797 -p1
-%patch1798 -p1
-%patch1799 -p1
-%patch1800 -p1
-%patch1801 -p1
-%patch1802 -p1
-%patch1803 -p1
-%patch1804 -p1
-%patch1805 -p1
-%patch1806 -p1
-%patch1807 -p1
-%patch1808 -p1
-%patch1809 -p1
-%patch1810 -p1
-%patch1811 -p1
-%patch1812 -p1
-%patch1813 -p1
-%patch1814 -p1
-%patch1815 -p1
-%patch1816 -p1
-%patch1817 -p1
-%patch1818 -p1
-%patch1819 -p1
-%patch1820 -p1
-%patch1821 -p1
-%patch1822 -p1
-%patch1823 -p1
-%patch1824 -p1
-%patch1825 -p1
-%patch1826 -p1
-%patch1827 -p1
-%patch1828 -p1
-%patch1829 -p1
-%patch1830 -p1
-%patch1831 -p1
-%patch1832 -p1
-%patch1833 -p1
-%patch1834 -p1
-%patch1835 -p1
-%patch1836 -p1
-%patch1837 -p1
-%patch1838 -p1
-%patch1839 -p1
-%patch1840 -p1
-%patch1841 -p1
-%patch1842 -p1
-%patch1843 -p1
-%patch1844 -p1
-%patch1845 -p1
-%patch1846 -p1
-%patch1847 -p1
-%patch1848 -p1
-%patch1849 -p1
-%patch1850 -p1
-%patch1851 -p1
-%patch1852 -p1
-%patch1853 -p1
-%patch1854 -p1
-%patch1855 -p1
-%patch1856 -p1
-%patch1857 -p1
-%patch1858 -p1
-%patch1859 -p1
-%patch1860 -p1
-%patch1861 -p1
-%patch1862 -p1
-%patch1863 -p1
-%patch1864 -p1
-%patch1865 -p1
-%patch1866 -p1
-%patch1867 -p1
-%patch1868 -p1
-%patch1869 -p1
-%patch1870 -p1
-%patch1871 -p1
-%patch1872 -p1
-%patch1873 -p1
-%patch1874 -p1
-%patch1875 -p1
-%patch1876 -p1
-%patch1877 -p1
-%patch1878 -p1
-%patch1879 -p1
-%patch1880 -p1
-%patch1881 -p1
-%patch1882 -p1
-%patch1883 -p1
-%patch1884 -p1
-%patch1885 -p1
-%patch1886 -p1
-%patch1887 -p1
-%patch1888 -p1
-%patch1889 -p1
-%patch1890 -p1
-%patch1891 -p1
-%patch1892 -p1
-%patch1893 -p1
-%patch1894 -p1
-%patch1895 -p1
-%patch1896 -p1
-%patch1897 -p1
-%patch1898 -p1
-%patch1899 -p1
-%patch1900 -p1
-%patch1901 -p1
-%patch1902 -p1
-%patch1903 -p1
-%patch1904 -p1
-%patch1905 -p1
-%patch1906 -p1
-%patch1907 -p1
-%patch1908 -p1
-%patch1909 -p1
-%patch1910 -p1
-%patch1911 -p1
-%patch1912 -p1
-%patch1913 -p1
-%patch1914 -p1
-%patch1915 -p1
-%patch1916 -p1
-%patch1917 -p1
-%patch1918 -p1
-%patch1919 -p1
-%patch1920 -p1
-%patch1921 -p1
-%patch1922 -p1
-%patch1923 -p1
+%patch -P76 -p1
+%patch -P77 -p1
+%patch -P78 -p1
+%patch -P79 -p1
+%patch -P80 -p1
+%patch -P81 -p1
+%patch -P82 -p1
+%patch -P83 -p1
+%patch -P84 -p1
+%patch -P85 -p1
+%patch -P86 -p1
+%patch -P87 -p1
+%patch -P88 -p1
+%patch -P89 -p1
+#%%patch -P90 -p1
+#%%patch -P91 -p1
+#%%patch -P92 -p1
+%patch -P93 -p1
+%patch -P94 -p1
+#%%patch -P95 -p1
+%patch -P96 -p1
+%patch -P97 -p1
+%patch -P98 -p1
+%patch -P99 -p1
+%patch -P100 -p1
+%patch -P101 -p1
+%patch -P102 -p1
+%patch -P103 -p1
+%patch -P104 -p1
+%patch -P105 -p1
+%patch -P106 -p1
+%patch -P107 -p1
+%patch -P108 -p1
+%patch -P109 -p1
+%patch -P110 -p1
+%patch -P111 -p1
+%patch -P112 -p1
+%patch -P113 -p1
+%patch -P114 -p1
+%patch -P115 -p1
+%patch -P116 -p1
+%patch -P117 -p1
+%patch -P118 -p1
+%patch -P119 -p1
+%patch -P120 -p1
+%patch -P121 -p1
+%patch -P122 -p1
+%patch -P123 -p1
+%patch -P124 -p1
+%patch -P125 -p1
+%patch -P126 -p1
+%patch -P127 -p1
+%patch -P128 -p1
+%patch -P129 -p1
+%patch -P130 -p1
+%patch -P131 -p1
+%patch -P132 -p1
+%patch -P133 -p1
+%patch -P134 -p1
+%patch -P135 -p1
+%patch -P136 -p1
+%patch -P137 -p1
+%patch -P138 -p1
+%patch -P139 -p1
+%patch -P140 -p1
+%patch -P141 -p1
+%patch -P142 -p1
+%patch -P143 -p1
+%patch -P144 -p1
+%patch -P145 -p1
+%patch -P146 -p1
+%patch -P147 -p1
+%patch -P148 -p1
+%patch -P149 -p1
+%patch -P150 -p1
+%patch -P151 -p1
+%patch -P152 -p1
+%patch -P153 -p1
+%patch -P154 -p1
+%patch -P155 -p1
+%patch -P156 -p1
+%patch -P157 -p1
+%patch -P158 -p1
+%patch -P159 -p1
+%patch -P160 -p1
+%patch -P161 -p1
+%patch -P162 -p1
+%patch -P163 -p1
+%patch -P164 -p1
+%patch -P165 -p1
+%patch -P166 -p1
+%patch -P168 -p1
+%patch -P169 -p1
+%patch -P170 -p1
+%patch -P171 -p1
+%patch -P172 -p1
+%patch -P173 -p1
+%patch -P174 -p1
+%patch -P175 -p1
+%patch -P176 -p1
+%patch -P177 -p1
+%patch -P178 -p1
+%patch -P179 -p1
+%patch -P180 -p1
+%patch -P181 -p1
+%patch -P182 -p1
+%patch -P183 -p1
+%patch -P184 -p1
+%patch -P185 -p1
+%patch -P186 -p1
+%patch -P187 -p1
+%patch -P188 -p1
+%patch -P189 -p1
+%patch -P190 -p1
+%patch -P191 -p1
+%patch -P192 -p1
+%patch -P193 -p1
+%patch -P194 -p1
+%patch -P195 -p1
+%patch -P196 -p1
+%patch -P197 -p1
+%patch -P198 -p1
+%patch -P199 -p1
+%patch -P200 -p1
+%patch -P201 -p1
+%patch -P202 -p1
+%patch -P203 -p1
+%patch -P204 -p1
+%patch -P205 -p1
+%patch -P206 -p1
+%patch -P207 -p1
+%patch -P208 -p1
+%patch -P209 -p1
+%patch -P210 -p1
+%patch -P211 -p1
+%patch -P212 -p1
+%patch -P213 -p1
+%patch -P214 -p1
+%patch -P215 -p1
+%patch -P216 -p1
+%patch -P217 -p1
+%patch -P218 -p1
+%patch -P219 -p1
+%patch -P220 -p1
+%patch -P221 -p1
+%patch -P222 -p1
+%patch -P223 -p1
+%patch -P224 -p1
+%patch -P225 -p1
+%patch -P226 -p1
+%patch -P227 -p1
+%patch -P228 -p1
+%patch -P229 -p1
+%patch -P230 -p1
+%patch -P231 -p1
+%patch -P232 -p1
+%patch -P233 -p1
+%patch -P234 -p1
+%patch -P235 -p1
+%patch -P236 -p1
+%patch -P237 -p1
+%patch -P238 -p1
+%patch -P239 -p1
+%patch -P240 -p1
+%patch -P241 -p1
+%patch -P242 -p1
+%patch -P243 -p1
+%patch -P244 -p1
+%patch -P245 -p1
+%patch -P246 -p1
+%patch -P247 -p1
+%patch -P248 -p1
+%patch -P249 -p1
+%patch -P250 -p1
+%patch -P251 -p1
+%patch -P252 -p1
+%patch -P253 -p1
+%patch -P254 -p1
+%patch -P255 -p1
+%patch -P256 -p1
+%patch -P257 -p1
+%patch -P258 -p1
+%patch -P259 -p1
+%patch -P260 -p1
+%patch -P261 -p1
+%patch -P262 -p1
+%patch -P263 -p1
+%patch -P264 -p1
+%patch -P265 -p1
+%patch -P266 -p1
+%patch -P267 -p1
+%patch -P268 -p1
+%patch -P269 -p1
+%patch -P270 -p1
+%patch -P271 -p1
+%patch -P272 -p1
+%patch -P273 -p1
+%patch -P274 -p1
+%patch -P275 -p1
+%patch -P276 -p1
+%patch -P277 -p1
+%patch -P278 -p1
+%patch -P279 -p1
+%patch -P280 -p1
+%patch -P281 -p1
+%patch -P282 -p1
+%patch -P283 -p1
+%patch -P284 -p1
+%patch -P285 -p1
+%patch -P286 -p1
+%patch -P287 -p1
+%patch -P288 -p1
+%patch -P289 -p1
+%patch -P290 -p1
+%patch -P291 -p1
+%patch -P292 -p1
+%patch -P293 -p1
+%patch -P294 -p1
+%patch -P295 -p1
+%patch -P296 -p1
+%patch -P297 -p1
+%patch -P298 -p1
+%patch -P299 -p1
+%patch -P300 -p1
+%patch -P301 -p1
+%patch -P302 -p1
+%patch -P303 -p1
+%patch -P304 -p1
+%patch -P305 -p1
+%patch -P306 -p1
+%patch -P307 -p1
+%patch -P308 -p1
+%patch -P309 -p1
+%patch -P310 -p1
+%patch -P311 -p1
+%patch -P312 -p1
+%patch -P313 -p1
+%patch -P314 -p1
+%patch -P315 -p1
+%patch -P316 -p1
+%patch -P317 -p1
+%patch -P318 -p1
+%patch -P319 -p1
+%patch -P320 -p1
+%patch -P321 -p1
+%patch -P322 -p1
+%patch -P323 -p1
+%patch -P324 -p1
+%patch -P325 -p1
+%patch -P326 -p1
+%patch -P327 -p1
+%patch -P328 -p1
+%patch -P329 -p1
+%patch -P330 -p1
+%patch -P331 -p1
+%patch -P332 -p1
+%patch -P333 -p1
+%patch -P334 -p1
+%patch -P335 -p1
+%patch -P336 -p1
+%patch -P337 -p1
+%patch -P338 -p1
+%patch -P339 -p1
+%patch -P340 -p1
+%patch -P341 -p1
+%patch -P342 -p1
+%patch -P343 -p1
+%patch -P344 -p1
+%patch -P345 -p1
+%patch -P346 -p1
+%patch -P347 -p1
+%patch -P348 -p1
+%patch -P349 -p1
+%patch -P350 -p1
+%patch -P351 -p1
+%patch -P352 -p1
+%patch -P353 -p1
+%patch -P354 -p1
+%patch -P355 -p1
+%patch -P356 -p1
+%patch -P357 -p1
+%patch -P358 -p1
+%patch -P359 -p1
+%patch -P360 -p1
+%patch -P361 -p1
+%patch -P362 -p1
+%patch -P363 -p1
+%patch -P364 -p1
+%patch -P365 -p1
+%patch -P366 -p1
+%patch -P367 -p1
+%patch -P368 -p1
+%patch -P369 -p1
+%patch -P370 -p1
+%patch -P371 -p1
+%patch -P372 -p1
+%patch -P373 -p1
+%patch -P374 -p1
+%patch -P375 -p1
+%patch -P376 -p1
+%patch -P377 -p1
+%patch -P378 -p1
+%patch -P379 -p1
+%patch -P380 -p1
+%patch -P381 -p1
+%patch -P382 -p1
+%patch -P383 -p1
+%patch -P384 -p1
+%patch -P385 -p1
+%patch -P386 -p1
+%patch -P387 -p1
+%patch -P388 -p1
+%patch -P389 -p1
+%patch -P390 -p1
+%patch -P391 -p1
+%patch -P392 -p1
+%patch -P393 -p1
+%patch -P394 -p1
+%patch -P395 -p1
+%patch -P396 -p1
+%patch -P397 -p1
+%patch -P398 -p1
+%patch -P399 -p1
+%patch -P400 -p1
+%patch -P401 -p1
+%patch -P402 -p1
+%patch -P403 -p1
+%patch -P404 -p1
+%patch -P405 -p1
+%patch -P406 -p1
+%patch -P407 -p1
+%patch -P408 -p1
+%patch -P409 -p1
+%patch -P410 -p1
+%patch -P411 -p1
+%patch -P412 -p1
+%patch -P413 -p1
+%patch -P414 -p1
+%patch -P415 -p1
+%patch -P416 -p1
+%patch -P417 -p1
+%patch -P418 -p1
+%patch -P419 -p1
+%patch -P420 -p1
+%patch -P421 -p1
+%patch -P422 -p1
+%patch -P423 -p1
+%patch -P424 -p1
+%patch -P425 -p1
+%patch -P426 -p1
+%patch -P427 -p1
+%patch -P428 -p1
+%patch -P429 -p1
+%patch -P430 -p1
+%patch -P431 -p1
+%patch -P432 -p1
+%patch -P433 -p1
+%patch -P434 -p1
+%patch -P435 -p1
+%patch -P436 -p1
+%patch -P437 -p1
+%patch -P438 -p1
+%patch -P439 -p1
+%patch -P440 -p1
+%patch -P441 -p1
+%patch -P442 -p1
+%patch -P443 -p1
+%patch -P444 -p1
+%patch -P445 -p1
+%patch -P446 -p1
+%patch -P447 -p1
+%patch -P448 -p1
+%patch -P449 -p1
+%patch -P450 -p1
+%patch -P451 -p1
+%patch -P452 -p1
+%patch -P453 -p1
+%patch -P454 -p1
+%patch -P455 -p1
+%patch -P456 -p1
+%patch -P457 -p1
+%patch -P458 -p1
+%patch -P459 -p1
+%patch -P460 -p1
+%patch -P461 -p1
+%patch -P462 -p1
+%patch -P463 -p1
+%patch -P464 -p1
+%patch -P465 -p1
+%patch -P466 -p1
+%patch -P467 -p1
+%patch -P468 -p1
+%patch -P469 -p1
+%patch -P470 -p1
+%patch -P471 -p1
+%patch -P472 -p1
+%patch -P473 -p1
+%patch -P474 -p1
+%patch -P475 -p1
+%patch -P476 -p1
+%patch -P477 -p1
+%patch -P478 -p1
+%patch -P479 -p1
+%patch -P480 -p1
+%patch -P481 -p1
+#%%patch -P482 -p1
+%patch -P483 -p1
+%patch -P484 -p1
+%patch -P485 -p1
+%patch -P486 -p1
+%patch -P487 -p1
+%patch -P488 -p1
+%patch -P489 -p1
+%patch -P490 -p1
+%patch -P491 -p1
+%patch -P492 -p1
+%patch -P493 -p1
+%patch -P494 -p1
+%patch -P495 -p1
+%patch -P496 -p1
+%patch -P497 -p1
+%patch -P498 -p1
+%patch -P499 -p1
+%patch -P500 -p1
+%patch -P501 -p1
+%patch -P502 -p1
+%patch -P503 -p1
+%patch -P504 -p1
+%patch -P505 -p1
+%patch -P506 -p1
+%patch -P507 -p1
+%patch -P508 -p1
+%patch -P509 -p1
+%patch -P510 -p1
+%patch -P511 -p1
+%patch -P512 -p1
+%patch -P513 -p1
+%patch -P514 -p1
+%patch -P515 -p1
+%patch -P516 -p1
+%patch -P517 -p1
+%patch -P518 -p1
+%patch -P519 -p1
+%patch -P520 -p1
+%patch -P521 -p1
+%patch -P522 -p1
+%patch -P523 -p1
+%patch -P524 -p1
+%patch -P525 -p1
+%patch -P526 -p1
+%patch -P527 -p1
+%patch -P528 -p1
+%patch -P529 -p1
+%patch -P530 -p1
+%patch -P531 -p1
+%patch -P532 -p1
+%patch -P533 -p1
+%patch -P534 -p1
+%patch -P535 -p1
+%patch -P536 -p1
+%patch -P537 -p1
+%patch -P538 -p1
+%patch -P539 -p1
+%patch -P540 -p1
+%patch -P541 -p1
+%patch -P542 -p1
+%patch -P543 -p1
+%patch -P544 -p1
+%patch -P545 -p1
+%patch -P546 -p1
+%patch -P547 -p1
+%patch -P548 -p1
+%patch -P549 -p1
+%patch -P550 -p1
+%patch -P551 -p1
+%patch -P552 -p1
+%patch -P553 -p1
+%patch -P554 -p1
+%patch -P555 -p1
+%patch -P556 -p1
+%patch -P557 -p1
+%patch -P558 -p1
+%patch -P559 -p1
+%patch -P560 -p1
+%patch -P561 -p1
+%patch -P562 -p1
+%patch -P563 -p1
+%patch -P564 -p1
+%patch -P565 -p1
+%patch -P566 -p1
+%patch -P567 -p1
+%patch -P568 -p1
+%patch -P569 -p1
+%patch -P570 -p1
+%patch -P571 -p1
+%patch -P572 -p1
+%patch -P573 -p1
+%patch -P574 -p1
+%patch -P575 -p1
+%patch -P576 -p1
+%patch -P577 -p1
+%patch -P578 -p1
+%patch -P579 -p1
+%patch -P580 -p1
+%patch -P581 -p1
+%patch -P582 -p1
+%patch -P583 -p1
+%patch -P584 -p1
+%patch -P585 -p1
+%patch -P586 -p1
+%patch -P587 -p1
+%patch -P588 -p1
+%patch -P589 -p1
+%patch -P590 -p1
+%patch -P591 -p1
+%patch -P592 -p1
+%patch -P593 -p1
+%patch -P594 -p1
+%patch -P595 -p1
+%patch -P596 -p1
+%patch -P597 -p1
+%patch -P598 -p1
+%patch -P599 -p1
+%patch -P600 -p1
+%patch -P601 -p1
+%patch -P602 -p1
+%patch -P603 -p1
+%patch -P604 -p1
+%patch -P605 -p1
+%patch -P606 -p1
+%patch -P607 -p1
+%patch -P608 -p1
+%patch -P609 -p1
+%patch -P610 -p1
+%patch -P611 -p1
+%patch -P612 -p1
+%patch -P613 -p1
+%patch -P614 -p1
+%patch -P615 -p1
+%patch -P616 -p1
+%patch -P617 -p1
+%patch -P618 -p1
+%patch -P619 -p1
+%patch -P620 -p1
+%patch -P621 -p1
+%patch -P622 -p1
+%patch -P623 -p1
+%patch -P624 -p1
+%patch -P625 -p1
+%patch -P626 -p1
+%patch -P627 -p1
+%patch -P628 -p1
+%patch -P629 -p1
+%patch -P630 -p1
+%patch -P631 -p1
+%patch -P632 -p1
+%patch -P633 -p1
+%patch -P634 -p1
+%patch -P635 -p1
+%patch -P636 -p1
+%patch -P637 -p1
+%patch -P638 -p1
+%patch -P639 -p1
+%patch -P640 -p1
+%patch -P641 -p1
+%patch -P642 -p1
+%patch -P643 -p1
+%patch -P644 -p1
+%patch -P645 -p1
+%patch -P646 -p1
+%patch -P647 -p1
+%patch -P648 -p1
+%patch -P649 -p1
+%patch -P650 -p1
+%patch -P651 -p1
+%patch -P652 -p1
+%patch -P653 -p1
+%patch -P654 -p1
+%patch -P655 -p1
+%patch -P656 -p1
+%patch -P657 -p1
+%patch -P658 -p1
+%patch -P659 -p1
+%patch -P660 -p1
+%patch -P661 -p1
+%patch -P662 -p1
+%patch -P663 -p1
+%patch -P664 -p1
+%patch -P665 -p1
+%patch -P666 -p1
+%patch -P667 -p1
+%patch -P668 -p1
+%patch -P669 -p1
+%patch -P670 -p1
+%patch -P671 -p1
+%patch -P672 -p1
+%patch -P673 -p1
+%patch -P674 -p1
+%patch -P675 -p1
+%patch -P676 -p1
+%patch -P677 -p1
+%patch -P678 -p1
+%patch -P679 -p1
+%patch -P680 -p1
+%patch -P681 -p1
+%patch -P682 -p1
+%patch -P683 -p1
+%patch -P684 -p1
+%patch -P685 -p1
+%patch -P686 -p1
+%patch -P687 -p1
+%patch -P688 -p1
+%patch -P689 -p1
+%patch -P690 -p1
+%patch -P691 -p1
+%patch -P692 -p1
+%patch -P693 -p1
+%patch -P694 -p1
+%patch -P695 -p1
+%patch -P696 -p1
+%patch -P697 -p1
+%patch -P698 -p1
+%patch -P699 -p1
+%patch -P700 -p1
+%patch -P701 -p1
+%patch -P702 -p1
+%patch -P703 -p1
+%patch -P704 -p1
+%patch -P705 -p1
+%patch -P706 -p1
+%patch -P707 -p1
+%patch -P708 -p1
+%patch -P709 -p1
+%patch -P710 -p1
+%patch -P711 -p1
+%patch -P712 -p1
+%patch -P713 -p1
+%patch -P714 -p1
+%patch -P715 -p1
+%patch -P716 -p1
+%patch -P717 -p1
+%patch -P718 -p1
+%patch -P719 -p1
+%patch -P720 -p1
+%patch -P721 -p1
+%patch -P722 -p1
+%patch -P723 -p1
+%patch -P724 -p1
+%patch -P725 -p1
+%patch -P726 -p1
+%patch -P727 -p1
+%patch -P728 -p1
+%patch -P729 -p1
+%patch -P730 -p1
+%patch -P731 -p1
+%patch -P732 -p1
+%patch -P733 -p1
+%patch -P734 -p1
+%patch -P735 -p1
+%patch -P736 -p1
+%patch -P737 -p1
+%patch -P738 -p1
+%patch -P739 -p1
+%patch -P740 -p1
+%patch -P741 -p1
+%patch -P742 -p1
+%patch -P743 -p1
+%patch -P744 -p1
+%patch -P745 -p1
+%patch -P746 -p1
+%patch -P747 -p1
+%patch -P748 -p1
+%patch -P749 -p1
+%patch -P750 -p1
+%patch -P751 -p1
+%patch -P752 -p1
+%patch -P753 -p1
+%patch -P754 -p1
+%patch -P755 -p1
+%patch -P756 -p1
+%patch -P757 -p1
+%patch -P758 -p1
+%patch -P759 -p1
+%patch -P760 -p1
+%patch -P761 -p1
+%patch -P762 -p1
+%patch -P763 -p1
+%patch -P764 -p1
+%patch -P765 -p1
+%patch -P766 -p1
+%patch -P767 -p1
+%patch -P768 -p1
+%patch -P769 -p1
+%patch -P770 -p1
+%patch -P771 -p1
+%patch -P772 -p1
+%patch -P773 -p1
+%patch -P774 -p1
+%patch -P775 -p1
+%patch -P776 -p1
+%patch -P777 -p1
+%patch -P778 -p1
+%patch -P779 -p1
+%patch -P780 -p1
+%patch -P781 -p1
+%patch -P782 -p1
+%patch -P783 -p1
+%patch -P784 -p1
+%patch -P785 -p1
+%patch -P786 -p1
+%patch -P787 -p1
+%patch -P788 -p1
+%patch -P789 -p1
+%patch -P790 -p1
+%patch -P791 -p1
+%patch -P792 -p1
+%patch -P793 -p1
+%patch -P794 -p1
+%patch -P795 -p1
+%patch -P796 -p1
+%patch -P797 -p1
+%patch -P798 -p1
+%patch -P799 -p1
+%patch -P800 -p1
+%patch -P801 -p1
+%patch -P802 -p1
+%patch -P803 -p1
+%patch -P804 -p1
+%patch -P805 -p1
+%patch -P806 -p1
+%patch -P807 -p1
+%patch -P808 -p1
+%patch -P809 -p1
+%patch -P810 -p1
+%patch -P811 -p1
+%patch -P812 -p1
+%patch -P813 -p1
+%patch -P814 -p1
+%patch -P815 -p1
+%patch -P816 -p1
+%patch -P817 -p1
+%patch -P818 -p1
+%patch -P819 -p1
+%patch -P820 -p1
+%patch -P821 -p1
+%patch -P822 -p1
+%patch -P823 -p1
+%patch -P824 -p1
+%patch -P825 -p1
+%patch -P826 -p1
+%patch -P827 -p1
+%patch -P828 -p1
+%patch -P829 -p1
+%patch -P830 -p1
+%patch -P831 -p1
+%patch -P832 -p1
+%patch -P833 -p1
+%patch -P834 -p1
+%patch -P835 -p1
+%patch -P836 -p1
+%patch -P837 -p1
+%patch -P838 -p1
+%patch -P839 -p1
+%patch -P840 -p1
+%patch -P841 -p1
+%patch -P842 -p1
+%patch -P843 -p1
+%patch -P844 -p1
+%patch -P845 -p1
+%patch -P846 -p1
+%patch -P847 -p1
+%patch -P848 -p1
+%patch -P849 -p1
+%patch -P850 -p1
+%patch -P851 -p1
+%patch -P852 -p1
+%patch -P853 -p1
+%patch -P854 -p1
+%patch -P855 -p1
+%patch -P856 -p1
+%patch -P857 -p1
+%patch -P858 -p1
+%patch -P859 -p1
+%patch -P860 -p1
+%patch -P861 -p1
+%patch -P862 -p1
+%patch -P863 -p1
+%patch -P864 -p1
+%patch -P865 -p1
+%patch -P866 -p1
+%patch -P867 -p1
+%patch -P868 -p1
+%patch -P869 -p1
+%patch -P870 -p1
+%patch -P871 -p1
+%patch -P872 -p1
+%patch -P873 -p1
+%patch -P874 -p1
+%patch -P875 -p1
+%patch -P876 -p1
+%patch -P877 -p1
+%patch -P878 -p1
+%patch -P879 -p1
+%patch -P880 -p1
+%patch -P881 -p1
+%patch -P882 -p1
+%patch -P883 -p1
+%patch -P884 -p1
+%patch -P885 -p1
+%patch -P886 -p1
+%patch -P887 -p1
+%patch -P888 -p1
+%patch -P889 -p1
+%patch -P890 -p1
+%patch -P891 -p1
+%patch -P892 -p1
+%patch -P893 -p1
+%patch -P894 -p1
+%patch -P895 -p1
+%patch -P896 -p1
+%patch -P897 -p1
+%patch -P898 -p1
+%patch -P899 -p1
+%patch -P900 -p1
+%patch -P901 -p1
+%patch -P902 -p1
+%patch -P903 -p1
+%patch -P904 -p1
+%patch -P905 -p1
+%patch -P906 -p1
+%patch -P907 -p1
+%patch -P908 -p1
+%patch -P909 -p1
+%patch -P910 -p1
+%patch -P911 -p1
+%patch -P912 -p1
+%patch -P913 -p1
+%patch -P914 -p1
+%patch -P915 -p1
+%patch -P916 -p1
+%patch -P917 -p1
+%patch -P918 -p1
+%patch -P919 -p1
+%patch -P920 -p1
+%patch -P921 -p1
+%patch -P922 -p1
+%patch -P923 -p1
+%patch -P924 -p1
+%patch -P925 -p1
+%patch -P926 -p1
+%patch -P927 -p1
+%patch -P928 -p1
+%patch -P929 -p1
+%patch -P930 -p1
+%patch -P931 -p1
+%patch -P932 -p1
+%patch -P933 -p1
+%patch -P934 -p1
+%patch -P935 -p1
+%patch -P936 -p1
+%patch -P937 -p1
+%patch -P938 -p1
+%patch -P939 -p1
+%patch -P940 -p1
+%patch -P941 -p1
+%patch -P942 -p1
+%patch -P943 -p1
+%patch -P944 -p1
+%patch -P945 -p1
+%patch -P946 -p1
+%patch -P947 -p1
+%patch -P948 -p1
+%patch -P949 -p1
+%patch -P950 -p1
+%patch -P951 -p1
+%patch -P952 -p1
+%patch -P953 -p1
+%patch -P954 -p1
+%patch -P955 -p1
+%patch -P956 -p1
+%patch -P957 -p1
+%patch -P958 -p1
+%patch -P959 -p1
+%patch -P960 -p1
+%patch -P961 -p1
+%patch -P962 -p1
+%patch -P963 -p1
+%patch -P964 -p1
+%patch -P965 -p1
+%patch -P966 -p1
+%patch -P967 -p1
+%patch -P968 -p1
+%patch -P969 -p1
+%patch -P970 -p1
+%patch -P971 -p1
+%patch -P972 -p1
+%patch -P973 -p1
+%patch -P974 -p1
+%patch -P975 -p1
+%patch -P976 -p1
+%patch -P977 -p1
+%patch -P978 -p1
+%patch -P979 -p1
+%patch -P980 -p1
+%patch -P981 -p1
+%patch -P982 -p1
+%patch -P983 -p1
+%patch -P984 -p1
+%patch -P985 -p1
+%patch -P986 -p1
+%patch -P987 -p1
+%patch -P988 -p1
+%patch -P989 -p1
+%patch -P990 -p1
+%patch -P991 -p1
+%patch -P992 -p1
+%patch -P993 -p1
+%patch -P994 -p1
+%patch -P995 -p1
+%patch -P996 -p1
+%patch -P997 -p1
+%patch -P998 -p1
+%patch -P999 -p1
+%patch -P1000 -p1
+%patch -P1001 -p1
+%patch -P1002 -p1
+%patch -P1003 -p1
+%patch -P1004 -p1
+%patch -P1005 -p1
+%patch -P1006 -p1
+%patch -P1007 -p1
+%patch -P1008 -p1
+%patch -P1009 -p1
+%patch -P1010 -p1
+%patch -P1011 -p1
+%patch -P1012 -p1
+%patch -P1013 -p1
+%patch -P1014 -p1
+%patch -P1015 -p1
+%patch -P1016 -p1
+%patch -P1017 -p1
+%patch -P1018 -p1
+%patch -P1019 -p1
+%patch -P1020 -p1
+%patch -P1021 -p1
+%patch -P1022 -p1
+%patch -P1023 -p1
+%patch -P1024 -p1
+%patch -P1025 -p1
+%patch -P1026 -p1
+%patch -P1027 -p1
+%patch -P1028 -p1
+%patch -P1029 -p1
+%patch -P1030 -p1
+%patch -P1031 -p1
+%patch -P1032 -p1
+%patch -P1033 -p1
+%patch -P1034 -p1
+%patch -P1035 -p1
+%patch -P1036 -p1
+%patch -P1037 -p1
+%patch -P1038 -p1
+%patch -P1039 -p1
+%patch -P1040 -p1
+%patch -P1041 -p1
+%patch -P1042 -p1
+%patch -P1043 -p1
+%patch -P1044 -p1
+%patch -P1045 -p1
+%patch -P1046 -p1
+%patch -P1047 -p1
+%patch -P1048 -p1
+%patch -P1049 -p1
+%patch -P1050 -p1
+%patch -P1051 -p1
+%patch -P1052 -p1
+%patch -P1053 -p1
+%patch -P1054 -p1
+%patch -P1055 -p1
+%patch -P1056 -p1
+%patch -P1057 -p1
+%patch -P1058 -p1
+%patch -P1059 -p1
+%patch -P1060 -p1
+%patch -P1061 -p1
+%patch -P1062 -p1
+%patch -P1063 -p1
+%patch -P1064 -p1
+%patch -P1065 -p1
+%patch -P1066 -p1
+%patch -P1067 -p1
+%patch -P1068 -p1
+%patch -P1069 -p1
+%patch -P1070 -p1
+%patch -P1071 -p1
+%patch -P1072 -p1
+%patch -P1073 -p1
+%patch -P1074 -p1
+%patch -P1075 -p1
+%patch -P1076 -p1
+%patch -P1077 -p1
+%patch -P1078 -p1
+%patch -P1079 -p1
+%patch -P1080 -p1
+%patch -P1081 -p1
+%patch -P1082 -p1
+%patch -P1083 -p1
+%patch -P1084 -p1
+%patch -P1085 -p1
+%patch -P1086 -p1
+%patch -P1087 -p1
+%patch -P1088 -p1
+%patch -P1089 -p1
+%patch -P1090 -p1
+%patch -P1091 -p1
+%patch -P1092 -p1
+%patch -P1093 -p1
+%patch -P1094 -p1
+%patch -P1095 -p1
+%patch -P1096 -p1
+%patch -P1097 -p1
+%patch -P1098 -p1
+%patch -P1099 -p1
+%patch -P1100 -p1
+%patch -P1101 -p1
+%patch -P1102 -p1
+%patch -P1103 -p1
+%patch -P1104 -p1
+%patch -P1105 -p1
+%patch -P1106 -p1
+%patch -P1107 -p1
+%patch -P1108 -p1
+%patch -P1109 -p1
+%patch -P1110 -p1
+%patch -P1111 -p1
+%patch -P1112 -p1
+%patch -P1113 -p1
+%patch -P1114 -p1
+%patch -P1115 -p1
+%patch -P1116 -p1
+%patch -P1117 -p1
+%patch -P1118 -p1
+%patch -P1119 -p1
+%patch -P1120 -p1
+%patch -P1121 -p1
+%patch -P1122 -p1
+%patch -P1123 -p1
+%patch -P1124 -p1
+%patch -P1125 -p1
+%patch -P1126 -p1
+%patch -P1127 -p1
+%patch -P1128 -p1
+%patch -P1129 -p1
+%patch -P1130 -p1
+%patch -P1131 -p1
+%patch -P1132 -p1
+%patch -P1133 -p1
+%patch -P1134 -p1
+%patch -P1135 -p1
+%patch -P1136 -p1
+%patch -P1137 -p1
+%patch -P1138 -p1
+%patch -P1139 -p1
+%patch -P1140 -p1
+%patch -P1141 -p1
+%patch -P1142 -p1
+%patch -P1143 -p1
+%patch -P1144 -p1
+%patch -P1145 -p1
+%patch -P1146 -p1
+%patch -P1147 -p1
+%patch -P1148 -p1
+%patch -P1149 -p1
+%patch -P1150 -p1
+%patch -P1151 -p1
+%patch -P1152 -p1
+%patch -P1153 -p1
+%patch -P1154 -p1
+%patch -P1155 -p1
+%patch -P1156 -p1
+%patch -P1157 -p1
+%patch -P1158 -p1
+%patch -P1159 -p1
+%patch -P1160 -p1
+%patch -P1161 -p1
+%patch -P1162 -p1
+%patch -P1163 -p1
+%patch -P1164 -p1
+%patch -P1165 -p1
+%patch -P1166 -p1
+%patch -P1167 -p1
+%patch -P1168 -p1
+%patch -P1169 -p1
+%patch -P1170 -p1
+%patch -P1171 -p1
+%patch -P1172 -p1
+%patch -P1173 -p1
+%patch -P1174 -p1
+%patch -P1175 -p1
+%patch -P1176 -p1
+%patch -P1177 -p1
+%patch -P1178 -p1
+%patch -P1179 -p1
+%patch -P1180 -p1
+%patch -P1181 -p1
+%patch -P1182 -p1
+%patch -P1183 -p1
+%patch -P1184 -p1
+%patch -P1185 -p1
+%patch -P1186 -p1
+%patch -P1187 -p1
+%patch -P1189 -p1
+%patch -P1190 -p1
+%patch -P1191 -p1
+%patch -P1192 -p1
+%patch -P1193 -p1
+%patch -P1194 -p1
+%patch -P1195 -p1
+%patch -P1196 -p1
+%patch -P1197 -p1
+%patch -P1198 -p1
+%patch -P1201 -p1
+%patch -P1202 -p1
+%patch -P1203 -p1
+%patch -P1204 -p1
+%patch -P1205 -p1
+%patch -P1206 -p1
+%patch -P1207 -p1
+%patch -P1208 -p1
+%patch -P1209 -p1
+%patch -P1210 -p1
+%patch -P1211 -p1
+%patch -P1212 -p1
+%patch -P1213 -p1
+%patch -P1214 -p1
+%patch -P1215 -p1
+%patch -P1216 -p1
+%patch -P1217 -p1
+%patch -P1218 -p1
+%patch -P1219 -p1
+%patch -P1220 -p1
+%patch -P1221 -p1
+%patch -P1222 -p1
+%patch -P1223 -p1
+%patch -P1224 -p1
+%patch -P1225 -p1
+%patch -P1226 -p1
+%patch -P1227 -p1
+%patch -P1228 -p1
+%patch -P1229 -p1
+%patch -P1230 -p1
+%patch -P1231 -p1
+%patch -P1232 -p1
+%patch -P1233 -p1
+%patch -P1234 -p1
+%patch -P1235 -p1
+%patch -P1236 -p1
+%patch -P1237 -p1
+%patch -P1238 -p1
+%patch -P1239 -p1
+%patch -P1240 -p1
+%patch -P1241 -p1
+%patch -P1242 -p1
+%patch -P1243 -p1
+%patch -P1244 -p1
+%patch -P1245 -p1
+%patch -P1246 -p1
+%patch -P1247 -p1
+%patch -P1248 -p1
+%patch -P1249 -p1
+%patch -P1250 -p1
+%patch -P1251 -p1
+%patch -P1252 -p1
+%patch -P1253 -p1
+%patch -P1254 -p1
+%patch -P1255 -p1
+%patch -P1256 -p1
+%patch -P1257 -p1
+%patch -P1258 -p1
+%patch -P1259 -p1
+%patch -P1260 -p1
+%patch -P1261 -p1
+%patch -P1262 -p1
+%patch -P1263 -p1
+%patch -P1264 -p1
+%patch -P1265 -p1
+%patch -P1266 -p1
+%patch -P1267 -p1
+%patch -P1268 -p1
+%patch -P1269 -p1
+%patch -P1270 -p1
+%patch -P1271 -p1
+%patch -P1272 -p1
+%patch -P1273 -p1
+%patch -P1274 -p1
+%patch -P1275 -p1
+%patch -P1276 -p1
+%patch -P1277 -p1
+%patch -P1278 -p1
+%patch -P1279 -p1
+%patch -P1280 -p1
+%patch -P1281 -p1
+%patch -P1282 -p1
+%patch -P1283 -p1
+%patch -P1284 -p1
+%patch -P1285 -p1
+%patch -P1286 -p1
+%patch -P1287 -p1
+%patch -P1288 -p1
+%patch -P1289 -p1
+%patch -P1290 -p1
+%patch -P1291 -p1
+%patch -P1292 -p1
+%patch -P1293 -p1
+%patch -P1294 -p1
+%patch -P1295 -p1
+%patch -P1296 -p1
+%patch -P1297 -p1
+%patch -P1298 -p1
+%patch -P1299 -p1
+%patch -P1300 -p1
+%patch -P1301 -p1
+%patch -P1302 -p1
+%patch -P1303 -p1
+%patch -P1304 -p1
+%patch -P1305 -p1
+%patch -P1306 -p1
+%patch -P1307 -p1
+%patch -P1308 -p1
+%patch -P1309 -p1
+%patch -P1310 -p1
+%patch -P1311 -p1
+%patch -P1312 -p1
+%patch -P1313 -p1
+%patch -P1314 -p1
+%patch -P1315 -p1
+%patch -P1316 -p1
+%patch -P1317 -p1
+%patch -P1318 -p1
+%patch -P1319 -p1
+%patch -P1320 -p1
+%patch -P1321 -p1
+%patch -P1322 -p1
+%patch -P1323 -p1
+%patch -P1324 -p1
+%patch -P1325 -p1
+%patch -P1326 -p1
+%patch -P1327 -p1
+%patch -P1328 -p1
+%patch -P1329 -p1
+%patch -P1330 -p1
+%patch -P1331 -p1
+%patch -P1332 -p1
+%patch -P1333 -p1
+%patch -P1334 -p1
+%patch -P1335 -p1
+%patch -P1336 -p1
+%patch -P1337 -p1
+%patch -P1338 -p1
+%patch -P1339 -p1
+%patch -P1340 -p1
+%patch -P1341 -p1
+%patch -P1342 -p1
+%patch -P1343 -p1
+%patch -P1344 -p1
+%patch -P1345 -p1
+%patch -P1346 -p1
+%patch -P1347 -p1
+%patch -P1348 -p1
+%patch -P1349 -p1
+%patch -P1350 -p1
+%patch -P1351 -p1
+%patch -P1352 -p1
+%patch -P1353 -p1
+%patch -P1354 -p1
+%patch -P1355 -p1
+%patch -P1356 -p1
+%patch -P1357 -p1
+%patch -P1358 -p1
+%patch -P1359 -p1
+%patch -P1360 -p1
+%patch -P1361 -p1
+%patch -P1362 -p1
+%patch -P1363 -p1
+%patch -P1364 -p1
+%patch -P1365 -p1
+%patch -P1366 -p1
+%patch -P1367 -p1
+%patch -P1368 -p1
+%patch -P1369 -p1
+%patch -P1370 -p1
+%patch -P1371 -p1
+%patch -P1372 -p1
+%patch -P1373 -p1
+%patch -P1374 -p1
+%patch -P1375 -p1
+%patch -P1376 -p1
+%patch -P1377 -p1
+%patch -P1378 -p1
+%patch -P1379 -p1
+%patch -P1380 -p1
+%patch -P1381 -p1
+%patch -P1382 -p1
+%patch -P1383 -p1
+%patch -P1384 -p1
+%patch -P1385 -p1
+%patch -P1386 -p1
+%patch -P1387 -p1
+%patch -P1388 -p1
+%patch -P1389 -p1
+%patch -P1390 -p1
+%patch -P1391 -p1
+%patch -P1392 -p1
+%patch -P1393 -p1
+%patch -P1394 -p1
+%patch -P1395 -p1
+%patch -P1396 -p1
+%patch -P1397 -p1
+%patch -P1398 -p1
+%patch -P1399 -p1
+%patch -P1400 -p1
+%patch -P1401 -p1
+%patch -P1402 -p1
+%patch -P1403 -p1
+%patch -P1404 -p1
+%patch -P1405 -p1
+%patch -P1406 -p1
+%patch -P1407 -p1
+%patch -P1408 -p1
+%patch -P1409 -p1
+%patch -P1410 -p1
+%patch -P1411 -p1
+%patch -P1412 -p1
+%patch -P1413 -p1
+%patch -P1414 -p1
+%patch -P1415 -p1
+%patch -P1416 -p1
+%patch -P1417 -p1
+%patch -P1418 -p1
+%patch -P1419 -p1
+%patch -P1420 -p1
+%patch -P1421 -p1
+%patch -P1422 -p1
+%patch -P1423 -p1
+%patch -P1424 -p1
+%patch -P1425 -p1
+%patch -P1426 -p1
+%patch -P1427 -p1
+%patch -P1428 -p1
+%patch -P1429 -p1
+%patch -P1430 -p1
+%patch -P1431 -p1
+%patch -P1432 -p1
+%patch -P1433 -p1
+%patch -P1434 -p1
+%patch -P1435 -p1
+%patch -P1436 -p1
+%patch -P1437 -p1
+%patch -P1438 -p1
+%patch -P1439 -p1
+%patch -P1440 -p1
+%patch -P1441 -p1
+%patch -P1442 -p1
+%patch -P1443 -p1
+%patch -P1444 -p1
+%patch -P1445 -p1
+%patch -P1446 -p1
+%patch -P1447 -p1
+%patch -P1448 -p1
+%patch -P1449 -p1
+%patch -P1450 -p1
+%patch -P1451 -p1
+%patch -P1452 -p1
+%patch -P1453 -p1
+%patch -P1454 -p1
+%patch -P1455 -p1
+%patch -P1456 -p1
+%patch -P1457 -p1
+%patch -P1458 -p1
+%patch -P1459 -p1
+%patch -P1460 -p1
+%patch -P1461 -p1
+%patch -P1462 -p1
+%patch -P1463 -p1
+%patch -P1464 -p1
+%patch -P1465 -p1
+%patch -P1466 -p1
+%patch -P1467 -p1
+%patch -P1468 -p1
+%patch -P1469 -p1
+%patch -P1470 -p1
+%patch -P1471 -p1
+%patch -P1472 -p1
+%patch -P1473 -p1
+%patch -P1474 -p1
+%patch -P1475 -p1
+%patch -P1476 -p1
+%patch -P1477 -p1
+%patch -P1478 -p1
+%patch -P1479 -p1
+%patch -P1480 -p1
+%patch -P1481 -p1
+%patch -P1482 -p1
+%patch -P1483 -p1
+%patch -P1484 -p1
+%patch -P1485 -p1
+%patch -P1486 -p1
+%patch -P1487 -p1
+%patch -P1488 -p1
+%patch -P1489 -p1
+%patch -P1490 -p1
+%patch -P1491 -p1
+%patch -P1492 -p1
+%patch -P1493 -p1
+%patch -P1494 -p1
+%patch -P1495 -p1
+%patch -P1496 -p1
+%patch -P1497 -p1
+%patch -P1498 -p1
+%patch -P1499 -p1
+%patch -P1500 -p1
+%patch -P1501 -p1
+%patch -P1502 -p1
+%patch -P1503 -p1
+%patch -P1504 -p1
+%patch -P1505 -p1
+%patch -P1506 -p1
+%patch -P1507 -p1
+%patch -P1508 -p1
+%patch -P1509 -p1
+%patch -P1510 -p1
+%patch -P1511 -p1
+%patch -P1512 -p1
+%patch -P1513 -p1
+%patch -P1514 -p1
+%patch -P1515 -p1
+%patch -P1516 -p1
+%patch -P1517 -p1
+%patch -P1518 -p1
+%patch -P1519 -p1
+%patch -P1520 -p1
+%patch -P1521 -p1
+%patch -P1522 -p1
+%patch -P1523 -p1
+%patch -P1524 -p1
+%patch -P1525 -p1
+%patch -P1526 -p1
+%patch -P1527 -p1
+%patch -P1528 -p1
+%patch -P1529 -p1
+%patch -P1530 -p1
+%patch -P1531 -p1
+%patch -P1532 -p1
+%patch -P1533 -p1
+%patch -P1534 -p1
+%patch -P1535 -p1
+%patch -P1536 -p1
+%patch -P1537 -p1
+%patch -P1538 -p1
+%patch -P1539 -p1
+%patch -P1540 -p1
+%patch -P1541 -p1
+%patch -P1542 -p1
+%patch -P1543 -p1
+%patch -P1544 -p1
+%patch -P1545 -p1
+%patch -P1546 -p1
+%patch -P1547 -p1
+%patch -P1548 -p1
+%patch -P1549 -p1
+%patch -P1550 -p1
+%patch -P1551 -p1
+%patch -P1552 -p1
+%patch -P1553 -p1
+%patch -P1554 -p1
+%patch -P1555 -p1
+%patch -P1556 -p1
+%patch -P1557 -p1
+%patch -P1558 -p1
+%patch -P1559 -p1
+%patch -P1560 -p1
+%patch -P1561 -p1
+%patch -P1562 -p1
+%patch -P1563 -p1
+%patch -P1564 -p1
+%patch -P1565 -p1
+%patch -P1566 -p1
+%patch -P1567 -p1
+%patch -P1568 -p1
+%patch -P1569 -p1
+%patch -P1570 -p1
+%patch -P1571 -p1
+%patch -P1572 -p1
+%patch -P1573 -p1
+%patch -P1574 -p1
+%patch -P1575 -p1
+%patch -P1576 -p1
+%patch -P1577 -p1
+%patch -P1578 -p1
+%patch -P1579 -p1
+%patch -P1580 -p1
+%patch -P1581 -p1
+%patch -P1582 -p1
+%patch -P1583 -p1
+%patch -P1584 -p1
+%patch -P1585 -p1
+%patch -P1586 -p1
+%patch -P1587 -p1
+%patch -P1588 -p1
+%patch -P1589 -p1
+%patch -P1590 -p1
+%patch -P1591 -p1
+%patch -P1592 -p1
+%patch -P1593 -p1
+%patch -P1594 -p1
+%patch -P1595 -p1
+%patch -P1596 -p1
+%patch -P1597 -p1
+%patch -P1598 -p1
+%patch -P1599 -p1
+%patch -P1600 -p1
+%patch -P1601 -p1
+%patch -P1602 -p1
+%patch -P1603 -p1
+%patch -P1604 -p1
+%patch -P1605 -p1
+%patch -P1606 -p1
+%patch -P1607 -p1
+%patch -P1608 -p1
+%patch -P1609 -p1
+%patch -P1610 -p1
+%patch -P1611 -p1
+%patch -P1612 -p1
+%patch -P1613 -p1
+%patch -P1614 -p1
+%patch -P1615 -p1
+%patch -P1616 -p1
+%patch -P1617 -p1
+%patch -P1618 -p1
+%patch -P1619 -p1
+%patch -P1620 -p1
+%patch -P1621 -p1
+%patch -P1622 -p1
+%patch -P1623 -p1
+%patch -P1624 -p1
+%patch -P1625 -p1
+%patch -P1626 -p1
+%patch -P1627 -p1
+%patch -P1628 -p1
+%patch -P1629 -p1
+%patch -P1630 -p1
+%patch -P1631 -p1
+%patch -P1632 -p1
+%patch -P1633 -p1
+%patch -P1634 -p1
+%patch -P1635 -p1
+%patch -P1636 -p1
+%patch -P1637 -p1
+%patch -P1638 -p1
+%patch -P1639 -p1
+%patch -P1640 -p1
+%patch -P1641 -p1
+%patch -P1642 -p1
+%patch -P1643 -p1
+%patch -P1644 -p1
+%patch -P1645 -p1
+%patch -P1646 -p1
+%patch -P1647 -p1
+%patch -P1648 -p1
+%patch -P1649 -p1
+%patch -P1650 -p1
+%patch -P1651 -p1
+%patch -P1652 -p1
+%patch -P1653 -p1
+%patch -P1654 -p1
+%patch -P1655 -p1
+%patch -P1656 -p1
+%patch -P1657 -p1
+%patch -P1658 -p1
+%patch -P1659 -p1
+%patch -P1660 -p1
+%patch -P1661 -p1
+%patch -P1662 -p1
+%patch -P1663 -p1
+%patch -P1664 -p1
+%patch -P1665 -p1
+%patch -P1666 -p1
+%patch -P1667 -p1
+%patch -P1668 -p1
+%patch -P1669 -p1
+%patch -P1670 -p1
+%patch -P1671 -p1
+%patch -P1672 -p1
+%patch -P1673 -p1
+%patch -P1674 -p1
+%patch -P1675 -p1
+%patch -P1676 -p1
+%patch -P1677 -p1
+%patch -P1678 -p1
+%patch -P1679 -p1
+%patch -P1680 -p1
+%patch -P1681 -p1
+%patch -P1682 -p1
+%patch -P1683 -p1
+%patch -P1684 -p1
+%patch -P1685 -p1
+%patch -P1686 -p1
+%patch -P1687 -p1
+%patch -P1688 -p1
+%patch -P1689 -p1
+%patch -P1690 -p1
+%patch -P1691 -p1
+%patch -P1692 -p1
+%patch -P1693 -p1
+%patch -P1694 -p1
+%patch -P1695 -p1
+%patch -P1696 -p1
+%patch -P1697 -p1
+%patch -P1698 -p1
+%patch -P1699 -p1
+%patch -P1700 -p1
+%patch -P1701 -p1
+%patch -P1702 -p1
+%patch -P1703 -p1
+%patch -P1704 -p1
+%patch -P1705 -p1
+%patch -P1706 -p1
+%patch -P1707 -p1
+%patch -P1708 -p1
+%patch -P1709 -p1
+%patch -P1710 -p1
+%patch -P1711 -p1
+%patch -P1712 -p1
+%patch -P1713 -p1
+%patch -P1714 -p1
+%patch -P1715 -p1
+%patch -P1716 -p1
+%patch -P1717 -p1
+%patch -P1718 -p1
+%patch -P1719 -p1
+%patch -P1720 -p1
+%patch -P1721 -p1
+%patch -P1722 -p1
+%patch -P1723 -p1
+%patch -P1724 -p1
+%patch -P1725 -p1
+%patch -P1726 -p1
+%patch -P1727 -p1
+%patch -P1728 -p1
+%patch -P1729 -p1
+%patch -P1730 -p1
+%patch -P1731 -p1
+%patch -P1732 -p1
+%patch -P1733 -p1
+%patch -P1734 -p1
+%patch -P1735 -p1
+%patch -P1736 -p1
+%patch -P1737 -p1
+%patch -P1738 -p1
+%patch -P1739 -p1
+%patch -P1740 -p1
+%patch -P1741 -p1
+%patch -P1742 -p1
+%patch -P1743 -p1
+%patch -P1744 -p1
+%patch -P1745 -p1
+%patch -P1746 -p1
+%patch -P1747 -p1
+%patch -P1748 -p1
+%patch -P1749 -p1
+%patch -P1750 -p1
+%patch -P1751 -p1
+%patch -P1752 -p1
+%patch -P1753 -p1
+%patch -P1754 -p1
+%patch -P1755 -p1
+%patch -P1756 -p1
+%patch -P1757 -p1
+%patch -P1758 -p1
+%patch -P1759 -p1
+%patch -P1760 -p1
+%patch -P1761 -p1
+%patch -P1762 -p1
+%patch -P1763 -p1
+%patch -P1764 -p1
+%patch -P1765 -p1
+%patch -P1766 -p1
+%patch -P1767 -p1
+%patch -P1768 -p1
+%patch -P1769 -p1
+%patch -P1770 -p1
+%patch -P1771 -p1
+%patch -P1772 -p1
+%patch -P1773 -p1
+%patch -P1774 -p1
+%patch -P1775 -p1
+%patch -P1776 -p1
+%patch -P1777 -p1
+%patch -P1778 -p1
+%patch -P1779 -p1
+%patch -P1780 -p1
+%patch -P1781 -p1
+%patch -P1782 -p1
+%patch -P1783 -p1
+%patch -P1784 -p1
+%patch -P1785 -p1
+%patch -P1786 -p1
+%patch -P1787 -p1
+%patch -P1788 -p1
+%patch -P1789 -p1
+%patch -P1790 -p1
+%patch -P1791 -p1
+%patch -P1792 -p1
+%patch -P1793 -p1
+%patch -P1794 -p1
+%patch -P1795 -p1
+%patch -P1796 -p1
+%patch -P1797 -p1
+%patch -P1798 -p1
+%patch -P1799 -p1
+%patch -P1800 -p1
+%patch -P1801 -p1
+%patch -P1802 -p1
+%patch -P1803 -p1
+%patch -P1804 -p1
+%patch -P1805 -p1
+%patch -P1806 -p1
+%patch -P1807 -p1
+%patch -P1808 -p1
+%patch -P1809 -p1
+%patch -P1810 -p1
+%patch -P1811 -p1
+%patch -P1812 -p1
+%patch -P1813 -p1
+%patch -P1814 -p1
+%patch -P1815 -p1
+%patch -P1816 -p1
+%patch -P1817 -p1
+%patch -P1818 -p1
+%patch -P1819 -p1
+%patch -P1820 -p1
+%patch -P1821 -p1
+%patch -P1822 -p1
+%patch -P1823 -p1
+%patch -P1824 -p1
+%patch -P1825 -p1
+%patch -P1826 -p1
+%patch -P1827 -p1
+%patch -P1828 -p1
+%patch -P1829 -p1
+%patch -P1830 -p1
+%patch -P1831 -p1
+%patch -P1832 -p1
+%patch -P1833 -p1
+%patch -P1834 -p1
+%patch -P1835 -p1
+%patch -P1836 -p1
+%patch -P1837 -p1
+%patch -P1838 -p1
+%patch -P1839 -p1
+%patch -P1840 -p1
+%patch -P1841 -p1
+%patch -P1842 -p1
+%patch -P1843 -p1
+%patch -P1844 -p1
+%patch -P1845 -p1
+%patch -P1846 -p1
+%patch -P1847 -p1
+%patch -P1848 -p1
+%patch -P1849 -p1
+%patch -P1850 -p1
+%patch -P1851 -p1
+%patch -P1852 -p1
+%patch -P1853 -p1
+%patch -P1854 -p1
+%patch -P1855 -p1
+%patch -P1856 -p1
+%patch -P1857 -p1
+%patch -P1858 -p1
+%patch -P1859 -p1
+%patch -P1860 -p1
+%patch -P1861 -p1
+%patch -P1862 -p1
+%patch -P1863 -p1
+%patch -P1864 -p1
+%patch -P1865 -p1
+%patch -P1866 -p1
+%patch -P1867 -p1
+%patch -P1868 -p1
+%patch -P1869 -p1
+%patch -P1870 -p1
+%patch -P1871 -p1
+%patch -P1872 -p1
+%patch -P1873 -p1
+%patch -P1874 -p1
+%patch -P1875 -p1
+%patch -P1876 -p1
+%patch -P1877 -p1
+%patch -P1878 -p1
+%patch -P1879 -p1
+%patch -P1880 -p1
+%patch -P1881 -p1
+%patch -P1882 -p1
+%patch -P1883 -p1
+%patch -P1884 -p1
+%patch -P1885 -p1
+%patch -P1886 -p1
+%patch -P1887 -p1
+%patch -P1888 -p1
+%patch -P1889 -p1
+%patch -P1890 -p1
+%patch -P1891 -p1
+%patch -P1892 -p1
+%patch -P1893 -p1
+%patch -P1894 -p1
+%patch -P1895 -p1
+%patch -P1896 -p1
+%patch -P1897 -p1
+%patch -P1898 -p1
+%patch -P1899 -p1
+%patch -P1900 -p1
+%patch -P1901 -p1
+%patch -P1902 -p1
+%patch -P1903 -p1
+%patch -P1904 -p1
+%patch -P1905 -p1
+%patch -P1906 -p1
+%patch -P1907 -p1
+%patch -P1908 -p1
+%patch -P1909 -p1
+%patch -P1910 -p1
+%patch -P1911 -p1
+%patch -P1912 -p1
+%patch -P1913 -p1
+%patch -P1914 -p1
+%patch -P1915 -p1
+%patch -P1916 -p1
+%patch -P1917 -p1
+%patch -P1918 -p1
+%patch -P1919 -p1
+%patch -P1920 -p1
+%patch -P1921 -p1
+%patch -P1922 -p1
+%patch -P1923 -p1
 
 %build
 buildarch="%{kvm_target}-softmmu"
