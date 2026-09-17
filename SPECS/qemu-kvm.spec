@@ -2,7 +2,7 @@
 %define rhev 0
 
 %bcond_with     guest_agent     # disabled
-
+%bcond_with     glusterfs       # disabled
 %global SLOF_gittagdate 20120731
 
 %global have_usbredir 1
@@ -76,7 +76,7 @@ Obsoletes: %1 < %{obsoletes_version}                                      \
 Summary: QEMU is a machine emulator and virtualizer
 Name: %{pkgname}%{?pkgsuffix}
 Version: 1.5.3
-Release: 156%{?dist}.5
+Release: 156%{?dist}.5.1
 # Epoch because we pushed a qemu-1.0 package. AIUI this can't ever be dropped
 Epoch: 10
 License: GPLv2+ and LGPLv2+ and BSD
@@ -3941,9 +3941,11 @@ BuildRequires: librados2-devel
 BuildRequires: librbd1-devel
 %endif
 %if 0%{!?build_only_sub:1}
+%if %{with gluster}
 # For gluster block driver
 BuildRequires: glusterfs-api-devel >= 3.6.0
 BuildRequires: glusterfs-devel
+%endif
 %endif
 # We need both because the 'stap' binary is probed for by configure
 BuildRequires: systemtap
@@ -6080,7 +6082,11 @@ dobuild() {
 %ifarch x86_64
         --enable-rbd \
 %endif
+%if %{with glusterfs}
         --enable-glusterfs \
+%else
+        --disable-glusterfs \
+%endif
 %if 0%{?have_tcmalloc:1}
         --enable-tcmalloc \
 %endif
@@ -6447,6 +6453,10 @@ sh %{_sysconfdir}/sysconfig/modules/kvm.modules &> /dev/null || :
 %{_mandir}/man8/qemu-nbd.8*
 
 %changelog
+* Thu Sep 17 2026 Philippe Coval <philippe.coval@vates.tech> - 1.5.3-156.el7_5.5.1
+- Rebuild with updated gnutls
+- Disable glusterfs dependency
+
 * Wed Aug 01 2018 Miroslav Rezanina <mrezanin@redhat.com> - 1.5.3-156.el7_5.5
 - kvm-multiboot-bss_end_addr-can-be-zero.patch [bz#1549824]
 - kvm-multiboot-Remove-unused-variables-from-multiboot.c.patch [bz#1549824]
